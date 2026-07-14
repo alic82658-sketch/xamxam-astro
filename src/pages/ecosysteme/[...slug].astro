@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WhatsAppCTA from '../../components/WhatsAppCTA.astro';
+import SchemaOrg from '../../components/SchemaOrg.astro';
+
+export async function getStaticPaths() {
+  const acteurs = await getCollection('acteurs', ({ data }) => !data.draft);
+  return acteurs
+    .map((acteur) => ({
+      params: { slug: acteur.id.replace(/\.md$/, '') },
+      props: { acteur },
+    }))
+    .filter(({ params }) => params.slug && params.slug.trim().length > 0);
+}
+
+const { acteur } = Astro.props;
+---
+
+<BaseLayout title={acteur.data.name} description={acteur.data.description}>
+  <section class="container profile-page">
+    <a class="back-link" href="/ecosysteme">← Retour à l’écosystème</a>
+    <div class="profile-card card">
+      <div class="profile-head">
+        <div>
+          <p class="pill">{acteur.data.category}</p>
+          <h1>{acteur.data.name}</h1>
+          <p class="lead">{acteur.data.city}, {acteur.data.country}</p>
+        </div>
+        {acteur.data.logo ? <img class="logo" src={acteur.data.logo} alt={`Logo de ${acteur.data.name}`} /> : null}
+      </div>
+      <p>{acteur.data.description}</p>
+      <div class="actions">
+        {acteur.data.website ? <a class="button" href={acteur.data.website} target="_blank" rel="noreferrer">Visiter le site</a> : null}
+        {acteur.data.whatsapp ? <WhatsAppCTA label="Contacter sur WhatsApp" /> : null}
+      </div>
+    </div>
+  </section>
+  <Fragment slot="schema">
+    <SchemaOrg type="Organization" />
+  </Fragment>
+</BaseLayout>
+
+<style>
+  .profile-page { padding-top: 2.5rem; }
+  .back-link { display: inline-block; margin-bottom: 1rem; color: var(--color-muted); }
+  .profile-card { display: grid; gap: 1rem; }
+  .profile-head { display: flex; justify-content: space-between; gap: 1rem; align-items: start; }
+  .logo { width: 72px; height: 72px; object-fit: cover; border-radius: 8px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+</style>

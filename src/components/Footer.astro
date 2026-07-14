@@ -1,0 +1,56 @@
+---
+const currentYear = new Date().getFullYear();
+const navLinks = [
+  { href: '/blog', label: 'Blog' },
+  { href: '/ecosysteme', label: 'Écosystème IA' },
+  { href: '/a-propos', label: 'À propos' },
+  { href: '/contact', label: 'Contact' },
+];
+const categories = [
+  { href: '/blog/categorie/outils-et-pratiques', label: 'Outils & Pratiques' },
+  { href: '/blog/categorie/ia-en-afrique', label: 'IA en Afrique' },
+];
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h2 class="footer-title">xamxam.ai</h2>
+      <p>Le média de référence sur l’intelligence artificielle au Sénégal, avec l’ambition de rayonner sur l’Afrique francophone.</p>
+    </div>
+    <div>
+      <h3>Navigation</h3>
+      <ul>
+        {navLinks.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h3>Catégories</h3>
+      <ul>
+        {categories.map((category) => <li><a href={category.href}>{category.label}</a></li>)}
+      </ul>
+      <a class="button secondary" href="https://wa.me/221XXXXXXXXX" target="_blank" rel="noreferrer">WhatsApp</a>
+    </div>
+  </div>
+  <div class="container footer-meta">
+    <div>
+      <p class="footer-baseline">IA au Sénégal</p>
+      <p>Édité par Malcom Ali Kassim — Fondateur de <a href="https://teranga-web-digital.com" target="_blank" rel="dofollow noreferrer">Teranga Web Digital</a>.</p>
+    </div>
+    <p>© {currentYear} xamxam.ai. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer { padding: 4rem 0 3rem; border-top: 1px solid rgba(255,255,255,0.12); background: var(--encre); color: var(--fond); }
+  .footer-grid { display: grid; gap: 1.5rem; }
+  .footer-title { font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--fond); }
+  .footer-baseline { color: var(--or); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.35rem; }
+  .footer-meta { display: flex; flex-direction: column; gap: 0.3rem; padding-top: 1.5rem; color: rgba(250,249,245,0.75); font-size: 0.95rem; }
+  .footer-meta a { color: var(--fond); }
+  .footer-meta a:hover, .footer-meta a:focus-visible { color: var(--or); }
+  .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.45rem; }
+  .site-footer ul a { color: rgba(250,249,245,0.9); }
+  .site-footer ul a:hover, .site-footer ul a:focus-visible { color: var(--or); }
+  @media (min-width: 760px) { .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; } .footer-meta { flex-direction: row; justify-content: space-between; } }
+</style>

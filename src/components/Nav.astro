@@ -1,0 +1,63 @@
+---
+const links = [
+  { href: '/blog', label: 'Blog' },
+  { href: '/ecosysteme', label: 'Écosystème IA' },
+  { href: '/a-propos', label: 'À propos' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="/" aria-label="xamxam.ai accueil">
+      <span class="brand-name">xamxam<span class="brand-dot">.ai</span></span>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      {links.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+      <a class="button" href="/contact">Référencer une solution</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--fond);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #E7E4DC;
+  }
+  .nav-shell { display: flex; align-items: center; justify-content: space-between; min-height: 76px; gap: 1rem; }
+  .brand { display: flex; flex-direction: column; gap: 0.2rem; }
+  .brand-name { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; color: var(--encre); }
+  .brand-dot { color: var(--vert); }
+  .site-nav { display: none; align-items: center; gap: 1rem; }
+  .site-nav a { color: var(--encre); }
+  .site-nav a:hover, .site-nav a:focus-visible { color: var(--vert); }
+  .site-nav.is-open { display: flex; flex-direction: column; position: absolute; top: 76px; left: 1rem; right: 1rem; padding: 1rem; background: var(--surface); border: 1px solid var(--color-border); border-radius: var(--radius); box-shadow: var(--shadow-soft); }
+  .nav-toggle { display: inline-flex; flex-direction: column; gap: 0.23rem; background: transparent; border: 0; padding: 0.35rem; }
+  .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--encre); }
+  @media (min-width: 760px) {
+    .nav-toggle { display: none; }
+    .site-nav { display: flex; }
+  }
+</style>
+
+<script>
+  const toggle = document.querySelector('[data-nav-toggle]');
+  const nav = document.getElementById('site-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+</script>

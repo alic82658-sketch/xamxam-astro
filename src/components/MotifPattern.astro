@@ -1,0 +1,88 @@
+---
+const { dense = false, compact = false, className = '' } = Astro.props;
+const count = compact ? 16 : dense ? 54 : 48;
+const cols = compact ? 4 : dense ? 9 : 8;
+const rows = Math.ceil(count / cols);
+const shapeTypes = ['triangle', 'diamond', 'circle', 'cross', 'arc', 'dot'];
+
+const cells = Array.from({ length: count }, (_, index) => {
+  const col = index % cols;
+  const row = Math.floor(index / cols);
+  const x = compact ? 58 + col * 72 : 24 + col * (dense ? 34 : 40);
+  const y = compact ? 42 + row * 56 : 22 + row * (dense ? 28 : 40);
+  const seed = (index * 17 + 11) % 11;
+  const type = shapeTypes[(index + seed) % shapeTypes.length];
+  const color = ['var(--vert)', 'var(--or)', 'var(--encre)'][(index + seed) % 3];
+  const opacity = compact ? 0.5 + ((seed % 4) * 0.06) : 0.42 + ((seed % 5) * 0.08);
+  const duration = 6 + (index % 3);
+  const delay = index * 0.15;
+  return { x, y, type, color, opacity, duration, delay };
+});
+---
+
+<div class:list={['motif-pattern', dense ? 'motif-pattern--dense' : '', compact ? 'motif-pattern--compact' : '', className]}>
+  <svg viewBox="0 0 360 280" role="presentation" aria-hidden="true">
+    <rect x="0" y="0" width="360" height="280" rx="24" fill="transparent" />
+    {cells.map((cell) => (
+      <g
+        class="motif-shape"
+        style={`--color:${cell.color}; --delay:${cell.delay}s; --duration:${cell.duration}s; --opacity:${cell.opacity};`}
+      >
+        {cell.type === 'triangle' ? (
+          <polygon points={`${cell.x},${cell.y - 8} ${cell.x + 8},${cell.y + 8} ${cell.x - 8},${cell.y + 8}`} fill="var(--color)" />
+        ) : null}
+        {cell.type === 'diamond' ? (
+          <polygon points={`${cell.x},${cell.y - 7} ${cell.x + 7},${cell.y} ${cell.x},${cell.y + 7} ${cell.x - 7},${cell.y}`} fill="var(--color)" />
+        ) : null}
+        {cell.type === 'circle' ? (
+          <circle cx={cell.x} cy={cell.y} r="6" fill="var(--color)" />
+        ) : null}
+        {cell.type === 'cross' ? (
+          <g>
+            <rect x={cell.x - 7} y={cell.y - 1.5} width="14" height="3" rx="1.5" fill="var(--color)" />
+            <rect x={cell.x - 1.5} y={cell.y - 7} width="3" height="14" rx="1.5" fill="var(--color)" />
+          </g>
+        ) : null}
+        {cell.type === 'arc' ? (
+          <path d={`M ${cell.x - 8} ${cell.y + 8} Q ${cell.x} ${cell.y - 4} ${cell.x + 8} ${cell.y + 8}`} stroke="var(--color)" stroke-width="2.5" fill="none" stroke-linecap="round" />
+        ) : null}
+        {cell.type === 'dot' ? (
+          <circle cx={cell.x} cy={cell.y} r="2.1" fill="var(--color)" />
+        ) : null}
+      </g>
+    ))}
+  </svg>
+</div>
+
+<style>
+  .motif-pattern {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .motif-pattern svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .motif-shape {
+    opacity: var(--opacity);
+    transform-origin: center;
+    animation: motifFloat var(--duration) ease-in-out infinite alternate;
+    animation-delay: var(--delay);
+  }
+  .motif-pattern--dense .motif-shape {
+    transform-origin: center;
+  }
+  @keyframes motifFloat {
+    0% {
+      opacity: calc(var(--opacity) * 0.6);
+      transform: scale(0.94) rotate(-2deg);
+    }
+    100% {
+      opacity: var(--opacity);
+      transform: scale(1.03) rotate(1.7deg);
+    }
+  }
+</style>

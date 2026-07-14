@@ -1,0 +1,35 @@
+---
+---
+
+<section class="newsletter card" aria-labelledby="newsletter-heading">
+  <div class="newsletter-copy">
+    <div class="newsletter-badge">
+      <svg class="newsletter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 6h16v12H4z"></path>
+        <path d="m4 7 8 6 8-6"></path>
+      </svg>
+      <p class="pill">Newsletter</p>
+    </div>
+    <h2 id="newsletter-heading">Restez informé de l’actualité IA au Sénégal</h2>
+    <p>Recevez les meilleurs analyses, outils et opportunités directement dans votre boîte mail.</p>
+  </div>
+  <form class="newsletter-form" action="https://app.mailerlite.com/webforms/submit/your-id" method="post">
+    <label class="sr-only" for="newsletter-email">Adresse email</label>
+    <input id="newsletter-email" name="email" type="email" placeholder="Votre adresse email" required />
+    <button type="submit">S’abonner</button>
+    <!-- <p class="form-note">Intégration MailerLite à prévoir depuis votre compte MailerLite.</p> -->
+  </form>
+</section>
+
+<style>
+  .newsletter { position: relative; display: grid; gap: 1rem; background: var(--surface); border: 1px solid #E7E4DC; padding: 1.4rem 1.4rem 1.4rem 2rem; overflow: hidden; }
+  .newsletter::before { content: ''; position: absolute; left: 0; top: 1.25rem; bottom: 1.25rem; width: 4px; background: var(--vert); border-radius: 999px; }
+  .newsletter-copy { position: relative; z-index: 1; }
+  .newsletter-badge { display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.8rem; }
+  .newsletter-icon { width: 24px; height: 24px; color: var(--vert); }
+  .newsletter-form { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+  .newsletter-form input { padding: 0.85rem 0.95rem; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--surface); color: var(--encre); }
+  .newsletter-form button { border: 0; border-radius: var(--radius); padding: 0.85rem 0.95rem; background: var(--vert); color: white; cursor: pointer; }
+  .newsletter .pill { border-color: var(--or); color: #8A5A0F; }
+  @media (min-width: 760px) { .newsletter { grid-template-columns: 1.2fr 1fr; align-items: center; } .newsletter-form { flex-direction: row; } }
+</style>

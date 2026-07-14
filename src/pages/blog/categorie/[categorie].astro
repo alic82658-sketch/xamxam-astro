@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticleCard from '../../../components/ArticleCard.astro';
+import { formatCategory } from '../../../utils/formatters';
+
+export function getStaticPaths() {
+  return [
+    { params: { categorie: 'outils-et-pratiques' } },
+    { params: { categorie: 'ia-en-afrique' } },
+  ];
+}
+
+const { categorie } = Astro.params;
+const categoryName = formatCategory(categorie);
+const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === categorie)).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+---
+
+<BaseLayout title={categoryName} description={`Articles sur ${categoryName.toLowerCase()} sur xamxam.ai.`}>
+  <section class="container section-space">
+    <h1>{categoryName}</h1>
+    <p class="lead">Découvrez les articles publiés dans cette catégorie.</p>
+    <div class="grid">
+      {articles.map((article) => (
+        <ArticleCard title={article.data.title} description={article.data.description} publishDate={article.data.publishDate} category={formatCategory(article.data.category)} slug={article.slug} image={article.data.image} imageAlt={article.data.imageAlt || article.data.title} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .section-space { padding-top: 3rem; }
+</style>

@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WhatsAppCTA from '../components/WhatsAppCTA.astro';
+---
+
+<BaseLayout title="Contact" description="Contactez xamxam.ai pour référencer une solution IA, proposer un sujet d’article ou toute autre demande.">
+  <section class="container contact-page">
+    <h1>Contact</h1>
+    <p class="lead">Pour référencer une solution IA, proposer un sujet d’article ou toute autre demande.</p>
+    <div class="contact-card card">
+      <WhatsAppCTA />
+      <form class="contact-form" action="/contact" method="post">
+        <label>
+          Nom
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="button" type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-page { padding-top: 3rem; }
+  .contact-card { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
+  .contact-form { display: grid; gap: 0.9rem; }
+  .contact-form label { display: grid; gap: 0.35rem; }
+  .contact-form input, .contact-form textarea { padding: 0.8rem 0.9rem; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--surface); color: var(--encre); }
+</style>

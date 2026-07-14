@@ -1,0 +1,149 @@
+---
+---
+<div class="brain-wrap" id="brain-wrap">
+  <canvas id="brain-canvas"></canvas>
+  <p class="brain-caption">Réseau neuronal — visualisation générative</p>
+</div>
+
+<style>
+  .brain-wrap {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    background: radial-gradient(circle at 50% 45%, rgba(14,122,95,0.07), transparent 70%);
+  }
+  #brain-canvas { display: block; width: 100%; height: 100%; }
+  .brain-caption {
+    margin-top: 0.75rem;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5A5F66;
+  }
+  @media (max-width: 768px) { .brain-wrap { height: 320px; } }
+</style>
+
+<script>
+  import * as THREE from 'three';
+
+  function initBrain() {
+    const wrap = document.getElementById('brain-wrap');
+    const canvas = document.getElementById('brain-canvas');
+    if (!wrap || !canvas) return;
+
+    let w = wrap.clientWidth;
+    let h = 460;
+    if (window.matchMedia('(max-width: 768px)').matches) h = 320;
+    if (!w) { requestAnimationFrame(initBrain); return; }
+
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(w, h, false);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(45, w / h, 0.1, 100);
+    camera.position.z = 2.9;
+
+    const COUNT = window.matchMedia('(max-width: 768px)').matches ? 500 : 1000;
+    const positions = new Float32Array(COUNT * 3);
+    const colors = new Float32Array(COUNT * 3);
+    const palette = [new THREE.Color('#16181D'), new THREE.Color('#0E7A5F'), new THREE.Color('#D99A2B')];
+    const pts = [];
+
+    for (let i = 0; i < COUNT; i++) {
+      const u = Math.random(), v = Math.random();
+      const theta = 2 * Math.PI * u;
+      const phi = Math.acos(2 * v - 1);
+      let x = Math.sin(phi) * Math.cos(theta);
+      let y = Math.cos(phi);
+      let z = Math.sin(phi) * Math.sin(theta);
+      x *= 1.25;
+      x += Math.sign(x) * 0.07;
+      if (y < -0.3) y *= 0.85;
+      x += (Math.random() - 0.5) * 0.08;
+      y += (Math.random() - 0.5) * 0.08;
+      z += (Math.random() - 0.5) * 0.08;
+      positions[i*3] = x; positions[i*3+1] = y; positions[i*3+2] = z;
+      pts.push(new THREE.Vector3(x, y, z));
+      const r = Math.random();
+      const c = r < 0.7 ? palette[0] : r < 0.9 ? palette[1] : palette[2];
+      colors[i*3] = c.r; colors[i*3+1] = c.g; colors[i*3+2] = c.b;
+    }
+
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    const mat = new THREE.PointsMaterial({
+      size: 0.03, vertexColors: true, transparent: true, opacity: 0.9, sizeAttenuation: true
+    });
+    const group = new THREE.Group();
+    group.add(new THREE.Points(geo, mat));
+
+    const linePos = [];
+    let segs = 0;
+    for (let i = 0; i < COUNT && segs < 2500; i++) {
+      for (let j = i + 1; j < COUNT && segs < 2500; j++) {
+        if (pts[i].distanceTo(pts[j]) < 0.24) {
+          linePos.push(pts[i].x, pts[i].y, pts[i].z, pts[j].x, pts[j].y, pts[j].z);
+          segs++;
+        }
+      }
+    }
+    const lineGeo = new THREE.BufferGeometry();
+    lineGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(linePos), 3));
+    group.add(new THREE.LineSegments(
+      lineGeo,
+      new THREE.LineBasicMaterial({ color: 0x0E7A5F, transparent: true, opacity: 0.14 })
+    ));
+
+    scene.add(group);
+
+    let baseY = 0, targetX = 0, targetY = 0;
+    wrap.addEventListener('mousemove', (e) => {
+      const r = wrap.getBoundingClientRect();
+      targetY = ((e.clientX - r.left) / r.width - 0.5) * 0.3;
+      targetX = ((e.clientY - r.top) / r.height - 0.5) * 0.3;
+    });
+
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const clock = new THREE.Clock();
+    let running = true;
+
+    function frame() {
+      if (!running) return;
+      const t = clock.getElapsedTime();
+      baseY += 0.0012;
+      group.rotation.y = baseY + targetY;
+      group.rotation.x += (targetX - group.rotation.x) * 0.05;
+      group.scale.setScalar(1 + Math.sin(t * 0.4) * 0.015);
+      renderer.render(scene, camera);
+      requestAnimationFrame(frame);
+    }
+
+    if (reduced) { renderer.render(scene, camera); } else { frame(); }
+
+    document.addEventListener('visibilitychange', () => {
+      const was = running;
+      running = !document.hidden;
+      if (running && !was && !reduced) frame();
+    });
+
+    let rt;
+    window.addEventListener('resize', () => {
+      clearTimeout(rt);
+      rt = setTimeout(() => {
+        w = wrap.clientWidth;
+        h = window.matchMedia('(max-width: 768px)').matches ? 320 : 460;
+        renderer.setSize(w, h, false);
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+      }, 150);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBrain);
+  } else {
+    initBrain();
+  }
+</script>

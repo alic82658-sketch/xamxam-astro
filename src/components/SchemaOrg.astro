@@ -1,0 +1,39 @@
+---
+const { type = 'WebSite', article } = Astro.props;
+const organization = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'xamxam.ai',
+  url: 'https://xamxam.ai',
+  founder: 'Malcom Ali Kassim',
+  description: 'Le média de référence sur l’intelligence artificielle au Sénégal, avec l’ambition de rayonner sur l’Afrique francophone.'
+};
+
+const webSite = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'xamxam.ai',
+  url: 'https://xamxam.ai',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://xamxam.ai/blog/?q={search_term_string}',
+    'query-input': 'required name=search_term_string'
+  }
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: article?.headline || 'xamxam.ai',
+  description: article?.description || '',
+  image: article?.image ? [article.image] : [],
+  datePublished: article?.datePublished || '',
+  dateModified: article?.dateModified || article?.datePublished || '',
+  author: { '@type': 'Person', name: article?.author || 'Malcom Ali Kassim' },
+  publisher: { '@type': 'Organization', name: 'xamxam.ai', url: 'https://xamxam.ai' },
+};
+
+const payload = type === 'Article' ? articleSchema : type === 'Organization' ? organization : type === 'LocalBusiness' ? { ...organization, '@type': 'LocalBusiness' } : webSite;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(payload)}></script>

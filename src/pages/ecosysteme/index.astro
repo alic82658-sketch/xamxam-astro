@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ActeurCard from '../../components/ActeurCard.astro';
+
+const acteurs = (await getCollection('acteurs', ({ data }) => !data.draft)).sort((a, b) => a.data.name.localeCompare(b.data.name));
+const categories = ['outil-ia', 'application', 'agence-digitale', 'freelance', 'formation', 'startup', 'media'];
+---
+
+<BaseLayout title="L’écosystème IA" description="Découvrez les acteurs, outils et solutions qui façonnent l’intelligence artificielle au Sénégal, avec l’ambition de rayonner sur l’Afrique francophone.">
+  <section class="container section-space">
+    <h1>L’écosystème IA au Sénégal</h1>
+    <p class="lead">Découvrez les acteurs, outils et solutions qui façonnent l’intelligence artificielle au Sénégal, avec l’ambition de rayonner sur l’Afrique francophone.</p>
+    <div class="filter-bar" role="toolbar" aria-label="Filtrer les acteurs IA">
+      <button class="filter-button is-active" data-filter="all" type="button">Tous</button>
+      {categories.map((category) => <button class="filter-button" data-filter={category} type="button">{category}</button>)}
+    </div>
+    <div class="grid three" id="acteur-grid">
+      {acteurs.map((acteur) => (
+        <div class="acteur-item" data-category={acteur.data.category}>
+          <ActeurCard name={acteur.data.name} description={acteur.data.description} category={acteur.data.category} city={acteur.data.city} logo={acteur.data.logo} slug={acteur.slug} />
+        </div>
+      ))}
+    </div>
+    <a class="button" href="/contact">Référencer votre solution</a>
+  </section>
+</BaseLayout>
+
+<style>
+  .section-space { padding-top: 3rem; }
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.25rem 0 1.5rem; }
+  .filter-button { border: 1px solid var(--color-border); background: var(--surface); color: var(--encre); padding: 0.55rem 0.8rem; border-radius: 999px; cursor: pointer; }
+  .filter-button.is-active { background: var(--vert); border-color: var(--vert); color: #FFFFFF; }
+</style>
+
+<script>
+  const buttons = Array.from(document.querySelectorAll('[data-filter]'));
+  const items = Array.from(document.querySelectorAll('.acteur-item'));
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      buttons.forEach((btn) => btn.classList.toggle('is-active', btn === button));
+      items.forEach((item) => {
+        const matches = filter === 'all' || item.getAttribute('data-category') === filter;
+        item.style.display = matches ? '' : 'none';
+      });
+    });
+  });
+</script>
