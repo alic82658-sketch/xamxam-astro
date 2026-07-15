@@ -41,7 +41,7 @@ const related = (await getCollection('articles', ({ data }) => !data.draft && da
       <h2>Articles similaires</h2>
       <div class="grid three">
         {related.map((item) => (
-          <a class="card related-card" href={`/blog/${item.slug}/`}>
+          <a class="card related-card" href={`/blog/${item.id}/`}>
             <h3>{item.data.title}</h3>
             <p>{item.data.description}</p>
           </a>

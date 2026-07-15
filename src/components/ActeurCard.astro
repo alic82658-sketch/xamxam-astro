@@ -1,4 +1,6 @@
 ---
+import { formatActeurCategory } from '../utils/formatters';
+
 const { name, description, category, city, logo, slug } = Astro.props;
 const href = `/ecosysteme/${slug}/`;
 const logoAlt = `Logo de ${name}`;
@@ -6,7 +8,7 @@ const logoAlt = `Logo de ${name}`;
 
 <article class="acteur-card card">
   <div class="card-top">
-    <span class="pill">{category}</span>
+    <span class="pill">{formatActeurCategory(category)}</span>
     {logo ? <img src={logo} alt={logoAlt} loading="lazy" /> : null}
   </div>
   <h3>{name}</h3>

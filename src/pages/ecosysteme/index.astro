@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ActeurCard from '../../components/ActeurCard.astro';
+import { formatActeurCategory } from '../../utils/formatters';
 
 const acteurs = (await getCollection('acteurs', ({ data }) => !data.draft)).sort((a, b) => a.data.name.localeCompare(b.data.name));
 const categories = ['outil-ia', 'application', 'agence-digitale', 'freelance', 'formation', 'startup', 'media'];
@@ -13,12 +14,12 @@ const categories = ['outil-ia', 'application', 'agence-digitale', 'freelance', '
     <p class="lead">Découvrez les acteurs, outils et solutions qui façonnent l’intelligence artificielle au Sénégal, avec l’ambition de rayonner sur l’Afrique francophone.</p>
     <div class="filter-bar" role="toolbar" aria-label="Filtrer les acteurs IA">
       <button class="filter-button is-active" data-filter="all" type="button">Tous</button>
-      {categories.map((category) => <button class="filter-button" data-filter={category} type="button">{category}</button>)}
+      {categories.map((category) => <button class="filter-button" data-filter={category} type="button">{formatActeurCategory(category)}</button>)}
     </div>
     <div class="grid three" id="acteur-grid">
       {acteurs.map((acteur) => (
         <div class="acteur-item" data-category={acteur.data.category}>
-          <ActeurCard name={acteur.data.name} description={acteur.data.description} category={acteur.data.category} city={acteur.data.city} logo={acteur.data.logo} slug={acteur.slug} />
+          <ActeurCard name={acteur.data.name} description={acteur.data.description} category={acteur.data.category} city={acteur.data.city} logo={acteur.data.logo} slug={acteur.id} />
         </div>
       ))}
     </div>

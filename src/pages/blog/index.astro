@@ -17,7 +17,7 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft)).so
     </div>
     <div class="grid">
       {articles.map((article) => (
-        <ArticleCard title={article.data.title} description={article.data.description} publishDate={article.data.publishDate} category={formatCategory(article.data.category)} slug={article.slug} image={article.data.image} imageAlt={article.data.imageAlt || article.data.title} />
+        <ArticleCard title={article.data.title} description={article.data.description} publishDate={article.data.publishDate} category={formatCategory(article.data.category)} slug={article.id} image={article.data.image} imageAlt={article.data.imageAlt || article.data.title} />
       ))}
     </div>
   </section>
