@@ -32,6 +32,14 @@ const acteurs = defineCollection({
     tags: z.array(z.string()).optional(),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
+    founder: z.string().optional(),
+    contact: z.string().optional(),
+    pricing: z.string().optional(),
+    verifiedAt: z.coerce.date().optional(),
+    sources: z.array(z.string()).optional(),
+    faq: z
+      .array(z.object({ q: z.string(), a: z.string() }))
+      .optional(),
   }),
 });
 

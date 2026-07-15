@@ -57,7 +57,7 @@ const acteurs = (await getCollection('acteurs', ({ data }) => !data.draft && dat
         <div class="meta-row">
           <span>{articles[0] ? new Date(articles[0].data.publishDate).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }) : 'À paraître'}</span>
           <span class="meta-separator">·</span>
-          <a class="card-link" href={articles[0] ? `/blog/${articles[0].slug}/` : '/blog'}>Lire l’article <span class="arrow">→</span></a>
+          <a class="card-link" href={articles[0] ? `/blog/${articles[0].id}/` : '/blog'}>Lire l’article <span class="arrow">→</span></a>
         </div>
       </div>
       <div class="featured-visual">
@@ -74,7 +74,7 @@ const acteurs = (await getCollection('acteurs', ({ data }) => !data.draft && dat
     </div>
     <div class="grid three">
       {articles.slice(1).map((article) => (
-        <ArticleCard title={article.data.title} description={article.data.description} publishDate={article.data.publishDate} category={formatCategory(article.data.category)} slug={article.slug} image={article.data.image} imageAlt={article.data.imageAlt || article.data.title} />
+        <ArticleCard title={article.data.title} description={article.data.description} publishDate={article.data.publishDate} category={formatCategory(article.data.category)} slug={article.id} image={article.data.image} imageAlt={article.data.imageAlt || article.data.title} />
       ))}
     </div>
   </section>
@@ -127,7 +127,7 @@ const acteurs = (await getCollection('acteurs', ({ data }) => !data.draft && dat
     {acteurs.length > 0 ? (
       <div class="grid three">
         {acteurs.map((acteur) => (
-          <ActeurCard name={acteur.data.name} description={acteur.data.description} category={acteur.data.category} city={acteur.data.city} logo={acteur.data.logo} slug={acteur.slug} />
+          <ActeurCard name={acteur.data.name} description={acteur.data.description} category={acteur.data.category} city={acteur.data.city} logo={acteur.data.logo} slug={acteur.id} />
         ))}
       </div>
     ) : (

@@ -1,51 +1,175 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import WhatsAppCTA from '../../components/WhatsAppCTA.astro';
-import SchemaOrg from '../../components/SchemaOrg.astro';
+import { formatActeurCategory, formatFrenchDate } from '../../utils/formatters';
 
 export async function getStaticPaths() {
   const acteurs = await getCollection('acteurs', ({ data }) => !data.draft);
-  return acteurs
-    .map((acteur) => ({
-      params: { slug: acteur.id.replace(/\.md$/, '') },
-      props: { acteur },
-    }))
-    .filter(({ params }) => params.slug && params.slug.trim().length > 0);
+  return acteurs.map((acteur) => ({
+    params: { slug: acteur.id },
+    props: { acteur },
+  }));
 }
 
 const { acteur } = Astro.props;
+const { Content } = await render(acteur);
+const d = acteur.data;
+const categoryLabel = formatActeurCategory(d.category);
+const pageUrl = new URL(`/ecosysteme/${acteur.id}/`, Astro.site ?? 'https://xamxam.ai').href;
+
+const orgType = d.category === 'formation' ? 'EducationalOrganization' : 'Organization';
+const mainEntity: Record<string, unknown> = {
+  '@type': orgType,
+  name: d.name,
+  description: d.description,
+  address: { '@type': 'PostalAddress', addressLocality: d.city, addressCountry: 'SN' },
+};
+if (d.website) mainEntity.url = d.website;
+if (d.founder) mainEntity.founder = { '@type': 'Person', name: d.founder };
+
+const graph: Record<string, unknown>[] = [
+  {
+    '@type': 'ItemPage',
+    '@id': pageUrl,
+    url: pageUrl,
+    name: `${d.name} | xamxam.ai`,
+    description: d.description,
+    inLanguage: 'fr',
+    isPartOf: { '@type': 'WebSite', name: 'xamxam.ai', url: 'https://xamxam.ai' },
+    mainEntity,
+    ...(d.verifiedAt ? { dateModified: d.verifiedAt.toISOString() } : {}),
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://xamxam.ai/' },
+      { '@type': 'ListItem', position: 2, name: 'Écosystème', item: 'https://xamxam.ai/ecosysteme/' },
+      { '@type': 'ListItem', position: 3, name: d.name },
+    ],
+  },
+];
+if (d.faq && d.faq.length > 0) {
+  graph.push({
+    '@type': 'FAQPage',
+    mainEntity: d.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  });
+}
+const schema = { '@context': 'https://schema.org', '@graph': graph };
 ---
 
-<BaseLayout title={acteur.data.name} description={acteur.data.description}>
+<BaseLayout title={d.name} description={d.description}>
   <section class="container profile-page">
     <a class="back-link" href="/ecosysteme">← Retour à l’écosystème</a>
     <div class="profile-card card">
       <div class="profile-head">
         <div>
-          <p class="pill">{acteur.data.category}</p>
-          <h1>{acteur.data.name}</h1>
-          <p class="lead">{acteur.data.city}, {acteur.data.country}</p>
+          <p class="pill">{categoryLabel}</p>
+          <h1>{d.name}</h1>
+          <p class="lead">{d.city}, {d.country}</p>
         </div>
-        {acteur.data.logo ? <img class="logo" src={acteur.data.logo} alt={`Logo de ${acteur.data.name}`} /> : null}
+        {d.logo ? <img class="logo" src={d.logo} alt={`Logo de ${d.name}`} /> : null}
       </div>
-      <p>{acteur.data.description}</p>
+      <p>{d.description}</p>
+      <dl class="facts">
+        {d.founder ? <><dt>Porté par</dt><dd>{d.founder}</dd></> : null}
+        {d.contact ? <><dt>Contact</dt><dd>{d.contact}</dd></> : null}
+        {d.pricing ? <><dt>Tarifs</dt><dd>{d.pricing}</dd></> : null}
+        {d.website ? (
+          <>
+            <dt>Site officiel</dt>
+            <dd>
+              <a href={d.website} target="_blank" rel="noreferrer">
+                {d.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+              </a>
+            </dd>
+          </>
+        ) : null}
+      </dl>
       <div class="actions">
-        {acteur.data.website ? <a class="button" href={acteur.data.website} target="_blank" rel="noreferrer">Visiter le site</a> : null}
-        {acteur.data.whatsapp ? <WhatsAppCTA label="Contacter sur WhatsApp" /> : null}
+        {d.website ? <a class="button" href={d.website} target="_blank" rel="noreferrer">Visiter le site</a> : null}
+        {d.whatsapp ? <WhatsAppCTA label="Contacter sur WhatsApp" number={d.whatsapp} /> : null}
       </div>
+      {d.verifiedAt ? <p class="verified">✓ Informations vérifiées le {formatFrenchDate(d.verifiedAt)} par xamxam.ai</p> : null}
+    </div>
+
+    <article class="prose profile-body">
+      <h2>À propos de {d.name}</h2>
+      <Content />
+    </article>
+
+    {d.faq && d.faq.length > 0 ? (
+      <section class="profile-faq" aria-label="Questions fréquentes">
+        <h2>Questions fréquentes</h2>
+        {d.faq.map((item) => (
+          <details class="card">
+            <summary>{item.q}</summary>
+            <p>{item.a}</p>
+          </details>
+        ))}
+      </section>
+    ) : null}
+
+    {d.sources && d.sources.length > 0 ? (
+      <aside class="profile-sources">
+        <h2>Sources</h2>
+        <ul>
+          {d.sources.map((source) => (
+            <li><a href={source} target="_blank" rel="noreferrer">{source}</a></li>
+          ))}
+        </ul>
+      </aside>
+    ) : null}
+
+    <div class="card referencer">
+      <p><strong>Vous portez une solution IA ou digitale au Sénégal ?</strong><br />Rejoignez l’écosystème xamxam.ai et gagnez en visibilité.</p>
+      <a class="button" href="/contact">Référencer votre solution</a>
     </div>
   </section>
   <Fragment slot="schema">
-    <SchemaOrg type="Organization" />
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </Fragment>
 </BaseLayout>
 
 <style>
-  .profile-page { padding-top: 2.5rem; }
+  .profile-page { padding-top: 2.5rem; padding-bottom: 3rem; }
   .back-link { display: inline-block; margin-bottom: 1rem; color: var(--color-muted); }
   .profile-card { display: grid; gap: 1rem; }
   .profile-head { display: flex; justify-content: space-between; gap: 1rem; align-items: start; }
   .logo { width: 72px; height: 72px; object-fit: cover; border-radius: 8px; }
   .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .facts {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.4rem 1rem;
+    margin: 0;
+    padding: 1rem 1.1rem;
+    background: rgba(14, 122, 95, 0.05);
+    border: 1px solid rgba(14, 122, 95, 0.12);
+    border-radius: 12px;
+  }
+  .facts dt { color: var(--gris-texte); font-size: 0.9rem; }
+  .facts dd { margin: 0; font-size: 0.95rem; }
+  .verified { color: var(--vert); font-size: 0.85rem; margin: 0; }
+  .profile-body { margin-top: 2rem; max-width: 70ch; }
+  .profile-body h2 { margin-bottom: 0.8rem; }
+  .profile-faq { margin-top: 2rem; }
+  .profile-faq h2 { margin-bottom: 0.8rem; }
+  .profile-faq details { margin-bottom: 0.6rem; padding: 0.9rem 1.1rem; }
+  .profile-faq summary { cursor: pointer; font-weight: 600; }
+  .profile-faq details p { margin: 0.6rem 0 0; color: var(--gris-texte); }
+  .profile-sources { margin-top: 2rem; font-size: 0.85rem; color: var(--gris-texte); }
+  .profile-sources h2 { font-size: 1rem; margin-bottom: 0.5rem; }
+  .profile-sources ul { padding-left: 1.1rem; margin: 0; }
+  .profile-sources a { color: var(--gris-texte); word-break: break-all; }
+  .referencer { margin-top: 2.5rem; display: grid; gap: 0.9rem; justify-items: start; background: rgba(14, 122, 95, 0.05); }
+  .referencer p { margin: 0; }
+  @media (max-width: 560px) {
+    .facts { grid-template-columns: 1fr; gap: 0.15rem; }
+    .facts dd { margin-bottom: 0.5rem; }
+  }
 </style>
