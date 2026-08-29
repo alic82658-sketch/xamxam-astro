@@ -2,8 +2,8 @@
 title: "ChatGPT conserve vos fichiers après la suppression du chat : comment les effacer"
 description: "ChatGPT conserve désormais les fichiers dans Library même après la suppression du chat. Voici comment les retrouver, les effacer et protéger ses données."
 author: "Malcom Ali Kassim"
-publishDate: 2026-08-29
-updateDate: 2026-08-29
+publishDate: 2026-08-29T12:00:00Z
+updateDate: 2026-08-29T12:00:00Z
 category: "outils-et-pratiques"
 tags: ["chatgpt", "confidentialite", "fichiers", "pme", "protection des donnees"]
 image: ""
