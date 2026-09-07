@@ -17,7 +17,30 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { Content } = await render(article);
-const related = (await getCollection('articles', ({ data }) => !data.draft && data.category === article.data.category && data.title !== article.data.title)).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()).slice(0, 3);
+const professionLabels = {
+  commercants: 'Commerçants et vendeurs',
+  commerciaux: 'Commerciaux',
+  'professeurs-formateurs': 'Professeurs et formateurs',
+  'dirigeants-pme': 'Dirigeants de PME',
+  'immobilier-meubles': 'Immobilier et meublés',
+  'demandeurs-emploi': 'Demandeurs d’emploi',
+};
+const overlap = (left: string[] = [], right: string[] = []) => {
+  const values = new Set(left.map((value) => value.toLowerCase()));
+  return right.reduce((score, value) => score + (values.has(value.toLowerCase()) ? 1 : 0), 0);
+};
+const related = (await getCollection('articles', ({ data }) => !data.draft && data.title !== article.data.title))
+  .map((item) => ({
+    item,
+    score: overlap(article.data.professions, item.data.professions) * 4
+      + overlap(article.data.tools, item.data.tools) * 3
+      + overlap(article.data.topics, item.data.topics) * 2
+      + (item.data.category === article.data.category ? 1 : 0),
+  }))
+  .filter(({ score }) => score > 0)
+  .sort((a, b) => b.score - a.score || b.item.data.publishDate.valueOf() - a.item.data.publishDate.valueOf())
+  .slice(0, 3)
+  .map(({ item }) => item);
 ---
 
 <BaseLayout title={article.data.title} description={article.data.description} image={article.data.image} type="article" publishDate={article.data.publishDate} updateDate={article.data.updateDate} author={article.data.author}>
@@ -30,6 +53,12 @@ const related = (await getCollection('articles', ({ data }) => !data.draft && da
       <span>Publié le {formatFrenchDate(article.data.publishDate)}</span>
       {article.data.updateDate ? <span>Mise à jour le {formatFrenchDate(article.data.updateDate)}</span> : null}
     </div>
+    {article.data.professions.length > 0 ? <nav class="profession-tags" aria-label="Métiers concernés">
+      <span>Utile pour :</span>
+      {article.data.professions.map((profession) => (
+        <a href={`/metiers/${profession}/`}>{professionLabels[profession]}</a>
+      ))}
+    </nav> : null}
     <div class="prose">
       <Content />
     </div>
@@ -58,6 +87,9 @@ const related = (await getCollection('articles', ({ data }) => !data.draft && da
   .article-page { padding-top: 2.5rem; }
   .hero-image { width: 100%; height: auto; max-height: 420px; object-fit: cover; border-radius: var(--radius); margin-bottom: 1.5rem; }
   .meta { display: flex; flex-wrap: wrap; gap: 1rem; color: var(--gris-texte); margin-bottom: 1.5rem; }
+  .profession-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: -0.5rem 0 1.5rem; }
+  .profession-tags span { color: var(--gris-texte); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; }
+  .profession-tags a { padding: 0.4rem 0.65rem; border-radius: 999px; background: var(--encre); color: white; font-size: 0.78rem; font-weight: 700; }
   .author-box { margin: 2rem 0; padding: 1rem 1.2rem; border-left: 4px solid var(--vert); background: rgba(14,122,95,0.08); border-radius: 0 8px 8px 0; }
   .related { margin-top: 2.5rem; }
   .related-card { display: block; }

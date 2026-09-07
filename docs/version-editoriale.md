@@ -7,9 +7,12 @@ Le site public reprend le projet Xamxam Sites, version 13, commit source
 ## Modifier le site public
 
 - Contenus des guides, méthodes et actualités : `src/data/editorial.json`.
+- Taxonomie métiers, thèmes, outils et note avant publication : `src/data/editorial.json`.
 - Rendu des nouvelles pages : `src/lib/editorial-renderer.mjs`.
 - Styles de la version validée : `public/styles/editorial.css`.
 - Images WebP : `public/images/editorial/`.
+- Identité visuelle robotique Xamxam : `src/data/visual-identity.json` et
+  `docs/direction-visuelle-xamxam.md`.
 - Anciens articles : `src/content/articles/` ; leur état de brouillon est conservé.
 - Fiches de l’écosystème : `src/content/acteurs/`, avec leurs adresses existantes.
 
@@ -37,4 +40,7 @@ modification du prototype Sites n’actualise pas automatiquement le domaine pub
 
 Le contrôle de publication vérifie les routes attendues, les liens et les images,
 les titres principaux, les adresses canoniques, le sitemap et les redirections.
+Il vérifie aussi les six pages métiers, les liaisons entre contenus et la note
+éditoriale minimale de 7/10. La stratégie complète est décrite dans
+`docs/strategie-editoriale-seo-monetisation.md`.
 Il ne constitue pas un test visuel dans un navigateur.

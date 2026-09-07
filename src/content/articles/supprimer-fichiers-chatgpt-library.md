@@ -6,6 +6,9 @@ publishDate: 2026-08-29T12:00:00Z
 updateDate: 2026-08-29T12:00:00Z
 category: "outils-et-pratiques"
 tags: ["chatgpt", "confidentialite", "fichiers", "pme", "protection des donnees"]
+professions: ["dirigeants-pme", "immobilier-meubles"]
+topics: ["confidentialité", "fichiers", "protection des données"]
+tools: ["ChatGPT"]
 image: ""
 imageAlt: ""
 draft: false
