@@ -6,4 +6,5 @@ export default defineConfig({
   site: 'https://xamxam.ai',
   integrations: [sitemap()],
   output: 'static',
+  trailingSlash: 'always',
 });

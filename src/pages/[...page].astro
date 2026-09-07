@@ -1,0 +1,9 @@
+---
+import {pagePaths, renderPage} from '../lib/editorial-renderer.mjs';
+export function getStaticPaths() {
+  return pagePaths.filter(path => path !== '/' && path !== '/a-propos').map(path => ({params:{page:path.slice(1)},props:{path}}));
+}
+const {path} = Astro.props;
+const html = renderPage(path);
+---
+<Fragment set:html={html} />

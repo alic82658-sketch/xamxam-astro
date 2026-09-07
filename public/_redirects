@@ -1,7 +1,10 @@
 /hello-world  /  301
 /hello-world/  /  301
-/ia-au-senegal-outils-formations-opportunites/  /blog/ia-au-senegal-outils-formations-opportunites/  301
-/outils-ia/  /blog/categorie/outils-et-pratiques/  301
-/applications-ia/  /blog/categorie/outils-et-pratiques/  301
-/ia-en-afrique/  /blog/categorie/ia-en-afrique/  301
-/guides-ia/  /blog/  301
+/ia-au-senegal-outils-formations-opportunites/  /guides/  301
+/outils-ia/  /outils/  301
+/applications-ia/  /outils/  301
+/ia-en-afrique/  /afrique/  301
+/guides-ia/  /guides/  301
+
+/blog/ia-au-senegal-outils-formations-opportunites  /guides/  301
+/blog/ia-au-senegal-outils-formations-opportunites/  /guides/  301
