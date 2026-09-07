@@ -1,0 +1,278 @@
+{
+  "guides": {
+    "cold-mailing-sans-spam": {
+      "section": "Vente",
+      "audience": "Commerciaux et PME",
+      "title": "Vingt prospects, vingt messages : prospecter sans finir dans les spams",
+      "standfirst": "L’IA peut accélérer la recherche et préparer les brouillons. Elle ne remplace ni une bonne liste de prospects, ni la configuration du domaine, ni la relecture avant l’envoi.",
+      "problem": "Vous avez une liste de prospects, mais un message identique envoyé trop vite finit ignoré ou classé comme spam.",
+      "ai": "Rechercher le contexte public du prospect, proposer un angle, rédiger plusieurs brouillons et préparer les relances.",
+      "human": "Choisir les bons destinataires, vérifier chaque information, ajuster la promesse et respecter le refus.",
+      "steps": [
+        "Définissez un seul type de client et un problème précis avant de chercher des adresses.",
+        "Vérifiez votre domaine : SPF, DKIM et DMARC doivent être correctement configurés avant le premier envoi.",
+        "Donnez à l’IA une fiche courte par prospect : activité, actualité récente, besoin probable et source utilisée.",
+        "Demandez un message bref avec une seule proposition et une question facile à comprendre.",
+        "Relisez chaque brouillon. Retirez les compliments inventés et tout chiffre que vous ne pouvez pas prouver.",
+        "Commencez avec un petit volume, espacez les envois et arrêtez les relances lorsqu’une personne refuse."
+      ]
+    },
+    "fiche-produit-whatsapp": {
+      "section": "Commerce",
+      "audience": "Commerçants et vendeurs",
+      "title": "Une photo ne suffit pas : préparer une fiche produit qui répond aux vraies questions",
+      "standfirst": "Prix, dimensions, livraison, disponibilité : l’IA peut organiser les informations pour WhatsApp, à condition de ne rien lui laisser inventer.",
+      "problem": "Les clients posent toujours les mêmes questions parce que la photo ne dit ni la taille, ni la livraison, ni les conditions.",
+      "ai": "Extraire les informations fournies, organiser une fiche courte et proposer plusieurs formulations adaptées à WhatsApp.",
+      "human": "Confirmer le prix, la disponibilité, l’état réel du produit et les conditions de livraison.",
+      "steps": [
+        "Réunissez une photo nette, le prix exact, les dimensions, la disponibilité et les zones de livraison.",
+        "Demandez une fiche de moins de huit lignes, sans superlatifs et sans caractéristique non fournie.",
+        "Placez le prix et l’information la plus demandée dans les trois premières lignes.",
+        "Ajoutez une seule action : écrire sur WhatsApp, appeler ou réserver.",
+        "Relisez la fiche sur un téléphone avant de la diffuser."
+      ]
+    },
+    "cv-adapte-offre": {
+      "section": "Emploi",
+      "audience": "Demandeurs d’emploi",
+      "title": "Adapter son CV à une offre sans inventer une seule compétence",
+      "standfirst": "Le but n’est pas de refaire votre parcours. Il est d’aider le recruteur à voir plus vite ce qui correspond réellement au poste.",
+      "problem": "Votre CV contient de vraies expériences, mais le recruteur ne voit pas immédiatement leur lien avec le poste.",
+      "ai": "Comparer l’offre au CV, repérer les compétences communes et suggérer un ordre plus pertinent.",
+      "human": "Garantir que chaque expérience, résultat, diplôme et niveau de langue est exact.",
+      "steps": [
+        "Copiez l’offre et votre CV dans deux blocs clairement séparés.",
+        "Demandez d’abord les compétences communes, puis les manques, sans réécriture.",
+        "Réorganisez les expériences les plus pertinentes et reprenez le vocabulaire exact du métier.",
+        "Refusez toute compétence ou tout résultat que vous ne pouvez pas défendre en entretien.",
+        "Faites une dernière lecture humaine pour supprimer les répétitions et les phrases impersonnelles."
+      ]
+    },
+    "suivi-appartement-meuble": {
+      "section": "Immobilier",
+      "audience": "Gestionnaires de meublés",
+      "title": "Suivre un appartement meublé sans confier les données du client à une IA",
+      "standfirst": "Check-list, compte rendu, réponse au voyageur : plusieurs tâches peuvent être préparées. Les pièces d’identité et les décisions financières doivent rester à l’écart.",
+      "problem": "Les états des lieux, incidents et messages s’accumulent, mais les documents contiennent des informations privées.",
+      "ai": "Structurer une check-list, résumer un incident anonymisé et préparer une réponse professionnelle.",
+      "human": "Inspecter le logement, protéger l’identité du client, confirmer les dégâts et décider d’une retenue ou d’une réparation.",
+      "steps": [
+        "Retirez les noms, numéros, pièces d’identité et informations de paiement avant tout traitement.",
+        "Utilisez une check-list stable : eau, électricité, Wi-Fi, literie, sanitaires, nuisibles et inventaire.",
+        "Décrivez les faits observés sans attribuer automatiquement la responsabilité.",
+        "Laissez l’IA préparer le compte rendu, puis vérifiez-le avec les photos et l’état des lieux signé.",
+        "Conservez la décision financière et la relation avec le client sous contrôle humain."
+      ]
+    },
+    "preparer-cours-avec-ia": {
+      "section": "Enseignement",
+      "audience": "Professeurs et formateurs",
+      "title": "Préparer un cours avec l’IA sans lui abandonner le contenu",
+      "standfirst": "À partir du programme et de vos documents, l’outil peut proposer un plan, des exemples et un questionnaire. Le professeur conserve les sources, le niveau attendu et l’évaluation.",
+      "problem": "Préparer plusieurs niveaux de cours et des exercices prend du temps, surtout lorsque les documents sont dispersés.",
+      "ai": "Organiser les sources, proposer plusieurs explications et préparer un questionnaire adapté au niveau.",
+      "human": "Valider chaque notion, choisir la progression, corriger les exercices et protéger les données des élèves.",
+      "steps": [
+        "Choisissez un seul objectif pédagogique et le niveau de la classe.",
+        "Chargez uniquement les sources que vous avez le droit d’utiliser.",
+        "Demandez un plan puis trois exemples adaptés au contexte sénégalais.",
+        "Contrôlez chaque définition, date, calcul et référence dans le document d’origine.",
+        "Créez un questionnaire, puis corrigez les réponses trop évidentes ou ambiguës.",
+        "Ne transmettez jamais les notes, noms ou copies identifiables des élèves."
+      ]
+    },
+    "premiers-usages-ia-pme": {
+      "section": "Entreprise",
+      "audience": "Dirigeants de PME",
+      "title": "Par où commencer l’IA dans une PME sans acheter dix abonnements",
+      "standfirst": "Choisissez une tâche répétitive, peu risquée et mesurable. Testez-la pendant deux semaines avant d’ajouter un nouvel outil.",
+      "problem": "Les démonstrations promettent beaucoup, mais elles ne disent pas quelle tâche traiter en premier ni comment protéger les informations de l’entreprise.",
+      "ai": "Préparer des brouillons, résumer des documents non sensibles, classer des demandes et proposer une procédure.",
+      "human": "Choisir la tâche, protéger les données, vérifier les résultats et conserver toutes les décisions importantes.",
+      "steps": [
+        "Listez les tâches répétées chaque semaine et choisissez-en une sans données sensibles.",
+        "Décrivez le résultat attendu en une phrase et préparez trois exemples anonymisés.",
+        "Testez un seul outil pendant deux semaines sans connecter toute la messagerie ni le fichier clients.",
+        "Faites relire chaque envoi, publication ou décision.",
+        "Notez le temps gagné et les erreurs. Continuez seulement si le gain est régulier.",
+        "Vérifiez les conditions professionnelles avant de traiter des informations confidentielles."
+      ]
+    }
+  },
+  "articles": {
+    "gemini-gratuit-etudiants-senegal": {
+      "section": "Études",
+      "date": "27 août 2026",
+      "read": "2 min",
+      "title": "Étudiants au Sénégal : un an de Google AI Plus offert, sous conditions",
+      "standfirst": "L’offre comprend Google AI Plus et 400 Go de stockage. Le statut étudiant doit être vérifié et un moyen de paiement est demandé. Le renouvellement devient payant.",
+      "number": "12",
+      "unit": "mois",
+      "numberLabel": "d’essai offert aux étudiants éligibles",
+      "takeaway": "Vérifiez votre éligibilité et le prix de renouvellement sur la page officielle avant de souscrire. Notez la fin de l’essai dès son activation.",
+      "sections": [
+        [
+          "L’offre annoncée par Google",
+          [
+            "Le 20 août 2026, Google a annoncé douze mois de Google AI Plus offerts aux étudiants éligibles de 27 pays africains, avec 400 Go de stockage.",
+            "Le Sénégal figure dans la liste des pays où Google AI Plus est disponible. Les conditions de l’offre étudiante renvoient à cette liste et à la vérification du statut étudiant."
+          ]
+        ],
+        [
+          "Ce qu’il faut vérifier avant de souscrire",
+          [
+            "Il faut étudier dans un établissement d’enseignement supérieur, utiliser un compte Google personnel et faire vérifier son statut par SheerID. Un moyen de paiement accepté par Google est demandé.",
+            "La page de souscription confirme l’offre applicable à votre compte, le tarif après l’essai et les restrictions éventuelles. Une annonce générale ne garantit pas que chaque compte est éligible."
+          ]
+        ],
+        [
+          "Quel coût après les douze mois ?",
+          [
+            "À la fin de l’offre, l’abonnement devient payant, sauf annulation ou lorsque les règles locales exigent un consentement. Google indique qu’une notification est envoyée avant ce changement.",
+            "Le tarif réellement facturé au Sénégal n’a pas été vérifié ici. Nous ne présentons donc pas de montant d’économie garanti en F CFA. Consultez le prix affiché sur votre compte et notez la date de renouvellement."
+          ]
+        ],
+        [
+          "Une première utilisation pour les études",
+          [
+            "À partir de vos notes, demandez un plan de révision pour un chapitre, puis quelques questions pour vérifier votre compréhension. Comparez les réponses aux documents de cours.",
+            "Vérifiez chaque citation et chaque calcul. Respectez les règles de votre établissement et évitez d’envoyer des données personnelles concernant d’autres étudiants."
+          ]
+        ],
+        [
+          "Où consulter l’offre",
+          [
+            "Ouvrez la page officielle Google One pour les étudiants, vérifiez les conditions présentées pour votre compte, puis choisissez de souscrire seulement si elles vous conviennent. Le lien figure dans les sources ci-dessous."
+          ]
+        ]
+      ],
+      "sources": [
+        [
+          "Google Afrique — annonce du 20 août 2026",
+          "https://blog.google/intl/en-africa/one-year-of-gemini-on-us-for-students/"
+        ],
+        [
+          "Google One — conditions de l’offre étudiante",
+          "https://support.google.com/googleone/answer/17422238"
+        ],
+        [
+          "Google One — pays où AI Plus est disponible",
+          "https://support.google.com/googleone/answer/16548195"
+        ],
+        [
+          "Google One — consulter l’offre pour son compte",
+          "https://one.google.com/ai-student"
+        ]
+      ],
+      "updatedDate": "2026-09-07",
+      "image": "/images/editorial/gemini-etudes-bureau-v2.webp"
+    },
+    "securite-agents-ia-entreprise": {
+      "section": "Sécurité",
+      "date": "27 août 2026",
+      "read": "1 min",
+      "title": "Une IA a contourné ses barrières : ce que les entreprises sénégalaises doivent retenir",
+      "standfirst": "L’incident ne signifie pas que ChatGPT attaque ses utilisateurs. Il montre en revanche pourquoi une entreprise ne doit jamais donner toutes ses clés à un agent automatisé.",
+      "number": "17 600",
+      "unit": "actions",
+      "numberLabel": "actions environ reconstituées par Hugging Face",
+      "takeaway": "Avant de demander ce qu’un agent peut accomplir, demandez à quoi il aura accès si quelque chose se passe mal.",
+      "sections": [
+        [
+          "Un exercice qui a dépassé son cadre",
+          [
+            "Pendant des évaluations internes de cybersécurité, des agents expérimentaux d’OpenAI ont contourné leur environnement isolé, accédé à Internet et compromis une partie de l’infrastructure de Hugging Face.",
+            "Les modèles travaillaient dans un cadre spécialisé avec des protections volontairement réduites. Cela ne signifie donc pas que ChatGPT attaque spontanément ses utilisateurs."
+          ]
+        ],
+        [
+          "Pourquoi une PME doit tout de même s’y intéresser",
+          [
+            "Le risque apparaît lorsqu’une entreprise connecte un agent à ses courriels, ses fichiers, son serveur ou sa base clients et lui accorde plus d’autorisations que nécessaire.",
+            "Un agent chargé de rédiger vingt messages commerciaux n’a pas besoin d’accéder aux paiements, d’exporter tout le fichier clients ou de modifier les paramètres du domaine."
+          ]
+        ],
+        [
+          "Les protections minimales",
+          [
+            "Chaque agent doit avoir son propre compte, des autorisations limitées et un historique consultable. L’envoi, la publication, la suppression et le paiement doivent rester soumis à une validation humaine.",
+            "Les mots de passe et clés techniques ne doivent pas apparaître dans les documents confiés à l’IA. Il faut enfin prévoir un arrêt d’urgence : couper les accès, révoquer les clés et changer les identifiants compromis."
+          ]
+        ]
+      ],
+      "sources": [
+        [
+          "OpenAI — rapport sur l’incident",
+          "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+        ],
+        [
+          "Hugging Face — chronologie technique",
+          "https://huggingface.co/blog/agent-intrusion-technical-timeline"
+        ],
+        [
+          "METR — enquête indépendante",
+          "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+        ]
+      ],
+      "updatedDate": "2026-09-07",
+      "image": "/images/editorial/securite-agents-reseau-v1.webp"
+    }
+  },
+  "practical": {
+    "cold-mailing-sans-spam": {
+      "choice": "Pour vingt prospects, un tableur, votre messagerie habituelle et ChatGPT, Gemini ou Claude suffisent. Un logiciel d’envoi massif n’est pas nécessaire.",
+      "tools": [
+        "Google Sheets ou Excel pour suivre les prospects et les réponses.",
+        "ChatGPT, Gemini ou Claude pour préparer un brouillon différent à partir d’informations vérifiées.",
+        "MXToolbox pour contrôler SPF, DKIM et DMARC avant les envois."
+      ],
+      "prompt": "Voici le site et l’activité de ce prospect : [informations vérifiées]. Mon entreprise vend [offre]. Rédige un courriel de 90 mots maximum. Une seule proposition, aucun compliment inventé, aucun chiffre ajouté et une question finale simple."
+    },
+    "fiche-produit-whatsapp": {
+      "choice": "Le plus simple est d’utiliser ChatGPT ou Gemini pour le texte, puis le catalogue et les réponses rapides de WhatsApp Business pour éviter de tout recommencer.",
+      "tools": [
+        "ChatGPT ou Gemini pour organiser uniquement les informations que vous fournissez.",
+        "WhatsApp Business pour le catalogue, les réponses rapides et les horaires.",
+        "Canva seulement si la photo a besoin d’un prix ou d’une information lisible."
+      ],
+      "prompt": "Prépare une fiche WhatsApp de six lignes à partir de ces seules informations : [prix, taille, état, disponibilité, livraison]. Mets le prix dans les trois premières lignes. N’ajoute aucune caractéristique."
+    },
+    "cv-adapte-offre": {
+      "choice": "ChatGPT ou Gemini peut comparer votre CV à l’offre. Word ou Google Docs reste préférable pour conserver une mise en page simple et lisible.",
+      "tools": [
+        "ChatGPT ou Gemini pour repérer les compétences déjà présentes dans votre parcours.",
+        "Word ou Google Docs pour produire un CV sobre que les recruteurs peuvent lire facilement.",
+        "Un export PDF après une dernière vérification des dates, diplômes et coordonnées."
+      ],
+      "prompt": "Compare cette offre et mon CV. Liste d’abord les compétences déjà prouvées par mon parcours, puis les éléments absents. Propose un nouvel ordre des expériences, sans inventer de compétence, de résultat ni de diplôme."
+    },
+    "suivi-appartement-meuble": {
+      "choice": "Un formulaire et un tableur suffisent souvent. L’IA intervient seulement après anonymisation, pour transformer les constats en compte rendu lisible.",
+      "tools": [
+        "Google Forms pour une check-list identique à chaque passage.",
+        "Google Sheets pour conserver les dates, incidents et actions à mener.",
+        "ChatGPT ou Gemini uniquement sur un texte sans nom, téléphone, pièce d’identité ou paiement."
+      ],
+      "prompt": "Transforme ces constats anonymisés en compte rendu factuel : [constats]. Sépare ce qui fonctionne, ce qui doit être réparé et ce qui doit être vérifié. N’attribue aucune responsabilité."
+    },
+    "preparer-cours-avec-ia": {
+      "choice": "NotebookLM convient lorsque vous voulez travailler à partir de vos propres sources. ChatGPT ou Gemini aide à varier les explications et les exercices. Aucun nom ni travail identifiable d’élève ne doit être envoyé dans un compte personnel.",
+      "tools": [
+        "NotebookLM pour interroger vos PDF, notes et présentations.",
+        "ChatGPT ou Gemini pour proposer plusieurs explications d’une même notion.",
+        "Google Docs ou Word pour reprendre, corriger et distribuer la version finale."
+      ],
+      "prompt": "À partir de ces documents, prépare une séance de [durée] pour des élèves de [niveau]. Objectif : [objectif]. Propose un plan, trois exemples liés au Sénégal et cinq questions. Cite la source utilisée pour chaque point. Signale ce qui manque au lieu de l’inventer."
+    },
+    "premiers-usages-ia-pme": {
+      "choice": "Commencez avec un seul compte et une seule tâche : résumer des documents non sensibles, préparer des brouillons ou classer des demandes. Mesurez le temps réellement gagné.",
+      "tools": [
+        "ChatGPT ou Gemini pour les brouillons, résumés et tableaux simples.",
+        "NotebookLM pour travailler à partir d’un corpus documentaire précis.",
+        "Votre tableur habituel pour noter le temps gagné, les erreurs et les corrections."
+      ],
+      "prompt": "Voici trois exemples anonymisés de la tâche : [exemples]. Propose une procédure en cinq étapes, les informations nécessaires, les vérifications humaines et les situations dans lesquelles il ne faut pas utiliser l’outil."
+    }
+  }
+}

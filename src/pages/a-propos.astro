@@ -1,23 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import SchemaOrg from '../components/SchemaOrg.astro';
+import {renderPage} from "../lib/editorial-renderer.mjs";
+const html = renderPage("/a-propos");
 ---
-
-<BaseLayout title="À propos" description="À propos de xamxam.ai, le média de référence sur l’intelligence artificielle au Sénégal, avec l’ambition de rayonner sur l’Afrique francophone.">
-  <section class="container about-page">
-    <h1>À propos de xamxam.ai</h1>
-    <div class="prose">
-      <p>xamxam (xamxam signifie « connaissance approfondie » en wolof) est le média de référence sur l’intelligence artificielle au Sénégal.</p>
-      <p>Notre mission : rendre l’IA accessible, concrète et utile pour les entrepreneurs et les professionnels sénégalais — avec l’ambition de devenir, à terme, une référence pour toute l’Afrique francophone.</p>
-      <p>Fondé et édité par Malcom Ali Kassim, entrepreneur digital basé à Dakar et fondateur de Teranga Web Digital (teranga-web-digital.com), xamxam.ai teste les outils IA depuis Dakar, documente l’écosystème tech sénégalais et produit des guides pratiques pour adopter l’IA dans son activité.</p>
-      <p>Vous êtes un acteur de l’IA au Sénégal ? Référencez votre solution ou proposez un sujet d’article.</p>
-    </div>
-  </section>
-  <Fragment slot="schema">
-    <SchemaOrg type="Organization" />
-  </Fragment>
-</BaseLayout>
-
-<style>
-  .about-page { padding-top: 3rem; }
-</style>
+<Fragment set:html={html} />
