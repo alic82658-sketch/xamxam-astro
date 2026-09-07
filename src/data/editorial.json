@@ -103,70 +103,131 @@
   "articles": {
     "gemini-gratuit-etudiants-senegal": {
       "section": "Études",
-      "date": "27 août 2026",
-      "read": "2 min",
-      "title": "Étudiants au Sénégal : un an de Google AI Plus offert, sous conditions",
-      "standfirst": "L’offre comprend Google AI Plus et 400 Go de stockage. Le statut étudiant doit être vérifié et un moyen de paiement est demandé. Le renouvellement devient payant.",
-      "number": "12",
-      "unit": "mois",
-      "numberLabel": "d’essai offert aux étudiants éligibles",
-      "takeaway": "Vérifiez votre éligibilité et le prix de renouvellement sur la page officielle avant de souscrire. Notez la fin de l’essai dès son activation.",
+      "date": "7 septembre 2026",
+      "publishedDate": "2026-09-07",
+      "verifiedDate": "7 septembre 2026",
+      "read": "8 min",
+      "title": "Gemini gratuit pendant un an au Sénégal : comment éviter le débit automatique ?",
+      "seoTitle": "Gemini étudiant gratuit au Sénégal : conditions et inscription",
+      "standfirst": "0 FCFA pendant douze mois : Google AI Plus est offert aux étudiants majeurs du Sénégal. Un moyen de paiement est exigé, puis le renouvellement devient payant.",
+      "metaDescription": "0 FCFA pendant douze mois : Google AI Plus est offert aux étudiants majeurs du Sénégal. Un moyen de paiement est exigé, puis le renouvellement devient payant.",
+      "number": "34 000",
+      "unit": "F CFA",
+      "numberLabel": "de valeur sur douze mois au tarif international de référence",
+      "takeaway": "Avant de valider, contrôlez le prix après l’offre et la date du premier prélèvement. Créez un rappel, puis annulez avant l’échéance si vous ne souhaitez pas payer.",
       "sections": [
         [
-          "L’offre annoncée par Google",
+          "Oui, l’offre est disponible au Sénégal",
           [
-            "Le 20 août 2026, Google a annoncé douze mois de Google AI Plus offerts aux étudiants éligibles de 27 pays africains, avec 400 Go de stockage.",
-            "Le Sénégal figure dans la liste des pays où Google AI Plus est disponible. Les conditions de l’offre étudiante renvoient à cette liste et à la vérification du statut étudiant."
+            "Google publie une page de l’offre étudiante localisée pour le Sénégal. Elle propose Google AI Plus pendant un an sans frais d’abonnement aux étudiants universitaires éligibles âgés de 18 ans ou plus.",
+            "Le Sénégal figure aussi dans la liste officielle des pays où Google AI Plus est disponible. Il ne s’agit donc pas d’une promotion réservée aux États-Unis ou à l’Europe.",
+            "Google a annoncé cette extension internationale le 19 août 2026. Hors États-Unis, l’offre concerne plus de 140 marchés éligibles et doit être activée au plus tard le 31 décembre 2026."
           ]
         ],
         [
-          "Ce qu’il faut vérifier avant de souscrire",
+          "Qui peut réellement l’obtenir ?",
           [
-            "Il faut étudier dans un établissement d’enseignement supérieur, utiliser un compte Google personnel et faire vérifier son statut par SheerID. Un moyen de paiement accepté par Google est demandé.",
-            "La page de souscription confirme l’offre applicable à votre compte, le tarif après l’essai et les restrictions éventuelles. Une annonce générale ne garantit pas que chaque compte est éligible."
+            "Il faut avoir au moins 18 ans, être actuellement inscrit dans un établissement d’enseignement supérieur, utiliser un compte Google personnel et faire vérifier son statut par SheerID. Google demande aussi un moyen de paiement admissible dès l’inscription.",
+            "L’offre ne vise donc pas tous les élèves. Un lycéen mineur ou une personne qui n’est plus inscrite dans le supérieur ne remplit pas les conditions annoncées.",
+            "La présence du Sénégal dans la liste des pays éligibles ne garantit pas l’acceptation de chaque dossier. L’établissement doit apparaître dans le parcours de vérification et l’étudiant doit pouvoir prouver une inscription en cours."
           ]
         ],
         [
-          "Quel coût après les douze mois ?",
+          "Environ 34 000 F CFA : ce que vaut l’année gratuite",
           [
-            "À la fin de l’offre, l’abonnement devient payant, sauf annulation ou lorsque les règles locales exigent un consentement. Google indique qu’une notification est envoyée avant ce changement.",
-            "Le tarif réellement facturé au Sénégal n’a pas été vérifié ici. Nous ne présentons donc pas de montant d’économie garanti en F CFA. Consultez le prix affiché sur votre compte et notez la date de renouvellement."
+            "Google indique un tarif international de 4,99 dollars par mois après l’offre, ou son équivalent en monnaie locale. Avec le cours vendeur de 568,250 F CFA pour un dollar publié par la BCEAO le 7 septembre, le calcul donne : 4,99 × 568,250 × 12 = environ 34 027 F CFA sur un an.",
+            "Cette somme est un repère de conversion, pas un prix sénégalais garanti. La page localisée pour le Sénégal affiche actuellement un montant dont le format est ambigu. Xamxam ne le présente donc pas comme un tarif local vérifié.",
+            "Avant de confirmer, il faut lire le montant affiché sur l’écran final. Les éventuels frais bancaires et variations de conversion ne sont pas compris dans notre calcul."
           ]
         ],
         [
-          "Une première utilisation pour les études",
+          "Que comprend Google AI Plus ?",
           [
-            "À partir de vos notes, demandez un plan de révision pour un chapitre, puis quelques questions pour vérifier votre compréhension. Comparez les réponses aux documents de cours.",
-            "Vérifiez chaque citation et chaque calcul. Respectez les règles de votre établissement et évitez d’envoyer des données personnelles concernant d’autres étudiants."
+            "L’offre sénégalaise annonce 400 Go de stockage pour Drive, Gmail et Photos, des limites Gemini deux fois plus élevées que celles d’un compte sans abonnement IA et l’accès à Gemini Omni.",
+            "Elle comprend aussi les carnets d’étude, des questionnaires personnalisés, le suivi des progrès, Gemini Live et des fonctions de création visuelle ou vidéo. Google annonce des téléchargements illimités dans les carnets d’étude, les outils visuels et Live.",
+            "Cela ne signifie pas que toutes les fonctions sont illimitées. Des plafonds varient selon l’outil et le type de demande. Gemini fonctionne sur le Web, Android et iPhone, et le français fait partie des langues prises en charge."
           ]
         ],
         [
-          "Où consulter l’offre",
+          "Une utilisation réaliste pour réviser",
           [
-            "Ouvrez la page officielle Google One pour les étudiants, vérifiez les conditions présentées pour votre compte, puis choisissez de souscrire seulement si elles vous conviennent. Le lien figure dans les sources ci-dessous."
+            "Prenons un étudiant en licence qui prépare quatre matières. Il peut créer un carnet par cours et y ajouter ses notes, le plan du professeur, les présentations qu’il a le droit d’utiliser et les exercices déjà corrigés.",
+            "Gemini peut préparer un résumé structuré, repérer les notions difficiles, créer des fiches, poser des questions progressives et proposer un calendrier de révision. Il peut aussi expliquer autrement une notion après une mauvaise réponse.",
+            "L’outil doit aider à comprendre, pas faire le devoir à la place de l’étudiant. Il peut inventer une référence, mal lire une formule ou fournir une réponse convaincante mais fausse. Le cours, les ouvrages demandés et les consignes de l’enseignant restent les références."
+          ]
+        ],
+        [
+          "Comment s’inscrire ?",
+          [
+            "Ouvrez la page officielle Google One pour les étudiants, connectez-vous avec un compte Google personnel et choisissez l’offre proposée. Lancez ensuite la vérification SheerID.",
+            "Si SheerID réclame une preuve, le document doit montrer le nom de l’étudiant, celui de l’établissement et une date récente. La FAQ cite notamment la carte d’étudiant avec date de validité, l’emploi du temps ou le reçu d’inscription.",
+            "Ajoutez le moyen de paiement demandé, puis contrôlez le prix et la date de renouvellement avant de valider. L’acceptation de chaque carte émise au Sénégal reste non vérifiée. Aucun paiement direct par Wave ou Orange Money n’est documenté dans les conditions consultées."
+          ]
+        ],
+        [
+          "Comment éviter le débit automatique ?",
+          [
+            "Google indique que l’offre bascule automatiquement vers Google AI Plus payant après douze mois, sauf annulation préalable. Notez dès l’inscription la date de début, la date annoncée du premier prélèvement et le montant affiché pour le renouvellement.",
+            "Créez un rappel un mois avant l’échéance. Pour annuler depuis Gemini, ouvrez Profil, puis Gérer l’abonnement. Les réglages Google One permettent ensuite de choisir Annuler l’abonnement.",
+            "Conservez le courriel de confirmation et vérifiez jusqu’à quelle date les avantages restent actifs. À la fin de la formule, le stockage supplémentaire disparaît. Si le compte dépasse alors sa capacité gratuite, il faudra supprimer des fichiers ou acheter du stockage."
+          ]
+        ],
+        [
+          "Quelles données faut-il protéger ?",
+          [
+            "SheerID conseille de masquer les informations sensibles qui ne servent pas à prouver l’éligibilité. Sa FAQ indique que les documents transmis pour la vérification sont ensuite supprimés définitivement.",
+            "Pour Gemini, les fichiers ajoutés comme sources dans un carnet ne servent pas directement à entraîner les modèles génératifs. Les conversations avec le carnet restent toutefois soumises au réglage Keep Activity.",
+            "Lorsque Keep Activity est activé, certaines données peuvent contribuer à l’amélioration des services avec l’aide de contrôleurs humains. Si le réglage est désactivé, les nouvelles conversations ne servent pas à l’entraînement, sauf retour volontaire, mais Google les conserve pendant 72 heures pour faire fonctionner et protéger le service.",
+            "N’envoyez pas un sujet d’examen confidentiel, une pièce d’identité complète, les notes ou coordonnées d’autres étudiants, des données médicales, le mot de passe du portail universitaire ou un mémoire protégé par un accord de confidentialité."
+          ]
+        ],
+        [
+          "Le verdict de Xamxam",
+          [
+            "L’offre est réellement ouverte aux étudiants majeurs du supérieur au Sénégal. Elle peut représenter environ 34 000 F CFA sur douze mois au tarif international de référence.",
+            "Ce qui est confirmé : le Sénégal est éligible, l’abonnement est offert pendant douze mois, l’inscription ferme le 31 décembre 2026, la vérification SheerID et un moyen de paiement sont exigés, puis le renouvellement automatique est annoncé.",
+            "Ce qui doit être vérifié pour chaque étudiant : la reconnaissance de son établissement, l’acceptation de son moyen de paiement, le prix exact après l’offre et les limites réelles des fonctions. Pour éviter toute surprise, il faut annuler avant le premier prélèvement si l’abonnement payant n’est pas souhaité."
           ]
         ]
       ],
       "sources": [
         [
-          "Google Afrique — annonce du 20 août 2026",
-          "https://blog.google/intl/en-africa/one-year-of-gemini-on-us-for-students/"
+          "Google Gemini — offre étudiante localisée pour le Sénégal",
+          "https://gemini.google/sn/students/?hl=en-GB"
+        ],
+        [
+          "Google — annonce internationale du 19 août 2026",
+          "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/"
         ],
         [
           "Google One — conditions de l’offre étudiante",
-          "https://support.google.com/googleone/answer/17422238"
+          "https://support.google.com/googleone/answer/17422238?hl=en"
         ],
         [
-          "Google One — pays où AI Plus est disponible",
-          "https://support.google.com/googleone/answer/16548195"
+          "Google One — disponibilité et annulation de Google AI Plus",
+          "https://support.google.com/googleone/answer/16548195?co=GENIE.Platform%3DAndroid&hl=en"
         ],
         [
-          "Google One — consulter l’offre pour son compte",
+          "Google Gemini — règles de confidentialité et Keep Activity",
+          "https://support.google.com/gemini/answer/13594961?hl=en"
+        ],
+        [
+          "SheerID — justificatifs et protection des documents",
+          "https://verify.sheerid.com/student-faq-b/"
+        ],
+        [
+          "BCEAO — cours des devises du 7 septembre 2026",
+          "https://www.bceao.int/fr/cours/cours-des-devises-contre-Franc-CFA-appliquer-aux-transferts"
+        ],
+        [
+          "Google One — demander l’offre pour son compte",
           "https://one.google.com/ai-student"
         ]
       ],
       "updatedDate": "2026-09-07",
-      "image": "/images/editorial/gemini-etudes-bureau-v2.webp"
+      "image": "/images/editorial/gemini-etudiant-senegal-offre-2026.webp",
+      "imageAlt": "Un bureau d’étudiant avec des fiches de révision, un calendrier de douze mois et une carte bancaire sans données personnelles.",
+      "socialImage": "/images/editorial/gemini-etudiant-senegal-offre-social-2026.webp"
     },
     "securite-agents-ia-entreprise": {
       "section": "Sécurité",
