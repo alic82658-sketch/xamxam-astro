@@ -1,0 +1,53 @@
+{
+  "name": "Xamxam Robotic Knowledge System",
+  "promise": "Une intelligence artificielle moderne, utile et maîtrisée depuis le Sénégal.",
+  "signature": {
+    "mainForm": "Un objet-machine non humanoïde, précis et modulaire, construit autour d’un noyau de savoir lumineux.",
+    "recognitionCode": [
+      "deux articulations ou lignes techniques qui composent discrètement un X",
+      "un noyau cobalt lumineux qui représente le savoir en mouvement",
+      "un unique témoin lumineux doré comme accent",
+      "des surfaces graphite mates associées à des pièces bleu cobalt"
+    ]
+  },
+  "palette": {
+    "navy": "#071B3A",
+    "cobalt": "#1261D8",
+    "lightBlue": "#DCE9FF",
+    "warmGold": "#F1B73C",
+    "paper": "#FBFAF7",
+    "graphite": "#202938"
+  },
+  "materials": [
+    "graphite mat",
+    "métal brossé sombre",
+    "céramique cobalt",
+    "verre technique légèrement translucide"
+  ],
+  "composition": {
+    "article": "horizontal 16:9, sujet central lisible, espace négatif généreux, sans texte",
+    "social": "vertical ou carré, même sujet, accroche de 4 à 9 mots, logo Xamxam discret",
+    "lighting": "lumière de studio nette, contours visibles, ombres douces, jamais sous-exposé",
+    "density": "un sujet principal et deux éléments secondaires au maximum"
+  },
+  "topicModules": {
+    "security": "module robotique de protection, verrou mécanique, bouclier ou circuit isolé",
+    "education": "bras articulé manipulant des pages, cartes de connaissances ou blocs pédagogiques",
+    "business": "machine triant des tâches, documents, messages ou flux commerciaux",
+    "employment": "scanner robotique analysant un CV et une offre sans silhouette humaine",
+    "commerce": "module de capture produit, étiquetage, colis ou terminal de vente",
+    "realEstate": "maquette architecturale inspectée par des capteurs et bras techniques",
+    "agriculture": "capteur ou outil robotique appliqué à une culture ou une chaîne de production"
+  },
+  "forbidden": [
+    "visage ou personne artificielle",
+    "robot humanoïde souriant ou robot de banque d’images",
+    "cerveau bleu générique",
+    "ambiance cyberpunk ou accumulation de néons",
+    "faux écran rempli de texte illisible",
+    "image trop sombre ou sujet noyé dans le décor",
+    "science-fiction spectaculaire sans lien avec l’usage expliqué",
+    "plusieurs styles graphiques concurrents dans la même image"
+  ],
+  "masterPrompt": "Créer une image éditoriale Xamxam.ai montrant [SUJET] sous la forme d’un objet-machine non humanoïde, précis et modulaire. Construire discrètement un X avec deux articulations ou lignes techniques autour d’un noyau de savoir cobalt lumineux. Utiliser graphite mat, métal brossé sombre, céramique cobalt et un seul témoin doré. Lumière de studio claire, contours très lisibles, ombres douces, fond épuré bleu très pâle ou papier chaud, composition horizontale 16:9 mobile-safe, un sujet central et deux éléments secondaires au maximum. Style éditorial technologique premium, crédible et propre à Xamxam.ai. Aucun humain, aucun visage, aucun robot humanoïde, aucun cerveau bleu générique, aucun cyberpunk, aucun faux écran, aucun texte, aucun watermark, aucune sous-exposition."
+}

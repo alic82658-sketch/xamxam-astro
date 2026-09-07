@@ -1,6 +1,57 @@
 {
+  "professions": {
+    "commercants": {
+      "label": "Commerçants et vendeurs",
+      "seoLabel": "commerçants et vendeurs",
+      "shortLabel": "Commerçants",
+      "description": "Présenter ses produits, répondre aux clients et vendre sur WhatsApp.",
+      "guide": "fiche-produit-whatsapp",
+      "illustration": "phone"
+    },
+    "commerciaux": {
+      "label": "Commerciaux",
+      "seoLabel": "commerciaux",
+      "shortLabel": "Commerciaux",
+      "description": "Chercher des prospects et organiser les relances sans envoyer du spam.",
+      "guide": "cold-mailing-sans-spam",
+      "illustration": "mail"
+    },
+    "professeurs-formateurs": {
+      "label": "Professeurs et formateurs",
+      "seoLabel": "professeurs et formateurs",
+      "shortLabel": "Professeurs",
+      "description": "Préparer un cours et des exercices à partir de sources vérifiées.",
+      "guide": "preparer-cours-avec-ia",
+      "illustration": "teacher"
+    },
+    "dirigeants-pme": {
+      "label": "Dirigeants de PME",
+      "seoLabel": "dirigeants de PME",
+      "shortLabel": "Dirigeants de PME",
+      "description": "Choisir une première tâche utile, sûre et mesurable dans l’entreprise.",
+      "guide": "premiers-usages-ia-pme",
+      "illustration": "desk"
+    },
+    "immobilier-meubles": {
+      "label": "Immobilier et meublés",
+      "seoLabel": "professionnels de l’immobilier et gestionnaires de meublés",
+      "shortLabel": "Immobilier",
+      "description": "Structurer les contrôles et le suivi sans exposer les données des clients.",
+      "guide": "suivi-appartement-meuble",
+      "illustration": "keys"
+    },
+    "demandeurs-emploi": {
+      "label": "Demandeurs d’emploi",
+      "seoLabel": "demandeurs d’emploi",
+      "shortLabel": "Emploi",
+      "description": "Lire une offre et adapter son CV sans inventer de compétence.",
+      "guide": "cv-adapte-offre",
+      "illustration": "suit"
+    }
+  },
   "guides": {
     "cold-mailing-sans-spam": {
+      "profession": "commerciaux",
       "section": "Vente",
       "audience": "Commerciaux et PME",
       "title": "Vingt prospects, vingt messages : prospecter sans finir dans les spams",
@@ -18,6 +69,7 @@
       ]
     },
     "fiche-produit-whatsapp": {
+      "profession": "commercants",
       "section": "Commerce",
       "audience": "Commerçants et vendeurs",
       "title": "Une photo ne suffit pas : préparer une fiche produit qui répond aux vraies questions",
@@ -34,6 +86,7 @@
       ]
     },
     "cv-adapte-offre": {
+      "profession": "demandeurs-emploi",
       "section": "Emploi",
       "audience": "Demandeurs d’emploi",
       "title": "Adapter son CV à une offre sans inventer une seule compétence",
@@ -50,6 +103,7 @@
       ]
     },
     "suivi-appartement-meuble": {
+      "profession": "immobilier-meubles",
       "section": "Immobilier",
       "audience": "Gestionnaires de meublés",
       "title": "Suivre un appartement meublé sans confier les données du client à une IA",
@@ -66,6 +120,7 @@
       ]
     },
     "preparer-cours-avec-ia": {
+      "profession": "professeurs-formateurs",
       "section": "Enseignement",
       "audience": "Professeurs et formateurs",
       "title": "Préparer un cours avec l’IA sans lui abandonner le contenu",
@@ -83,6 +138,7 @@
       ]
     },
     "premiers-usages-ia-pme": {
+      "profession": "dirigeants-pme",
       "section": "Entreprise",
       "audience": "Dirigeants de PME",
       "title": "Par où commencer l’IA dans une PME sans acheter dix abonnements",
@@ -102,6 +158,16 @@
   },
   "articles": {
     "gemini-gratuit-etudiants-senegal": {
+      "professions": ["professeurs-formateurs", "demandeurs-emploi"],
+      "topics": ["études", "formation", "abonnement", "paiement"],
+      "tools": ["Google Gemini"],
+      "editorialScore": {
+        "localUtility": 3,
+        "sources": 2,
+        "novelty": 2,
+        "practicalValue": 2,
+        "shareability": 1
+      },
       "section": "Études",
       "date": "7 septembre 2026",
       "publishedDate": "2026-09-07",
@@ -230,6 +296,16 @@
       "socialImage": "/images/editorial/gemini-etudiant-senegal-offre-social-2026.webp"
     },
     "securite-agents-ia-entreprise": {
+      "professions": ["dirigeants-pme", "commerciaux"],
+      "topics": ["sécurité", "automatisation", "données", "entreprise"],
+      "tools": ["Agents IA"],
+      "editorialScore": {
+        "localUtility": 3,
+        "sources": 2,
+        "novelty": 2,
+        "practicalValue": 2,
+        "shareability": 1
+      },
       "section": "Sécurité",
       "date": "27 août 2026",
       "read": "1 min",
