@@ -165,6 +165,118 @@
     }
   },
   "articles": {
+    "hospitable-senegal-meubles-frais-airbnb": {
+      "professions": ["immobilier-meubles", "dirigeants-pme"],
+      "topics": ["location meublée", "Airbnb", "commission", "automatisation"],
+      "tools": ["Hospitable"],
+      "editorialScore": {
+        "localUtility": 3,
+        "sources": 2,
+        "novelty": 2,
+        "practicalValue": 2,
+        "shareability": 1
+      },
+      "section": "Alerte outil · Immobilier",
+      "date": "8 septembre 2026",
+      "publishedDate": "2026-09-08",
+      "verifiedDate": "8 septembre 2026",
+      "read": "8 min",
+      "title": "Un logiciel gratuit peut faire passer les frais Airbnb à 15,5 %",
+      "seoTitle": "Hospitable au Sénégal : prix et frais Airbnb à vérifier",
+      "standfirst": "Hospitable peut centraliser gratuitement plusieurs meublés. Mais sa connexion à Airbnb peut imposer la commission unique, généralement fixée à 15,5 % du montant de la réservation.",
+      "metaDescription": "Hospitable centralise gratuitement plusieurs meublés, mais sa connexion peut imposer 15,5 % de frais Airbnb. Calculs et précautions au Sénégal.",
+      "number": "46 500",
+      "unit": "F CFA",
+      "numberLabel": "de frais simulés sur une réservation de 300 000 F CFA au taux de 15,5 %",
+      "takeaway": "Avant de relier tous vos logements, relevez les frais Airbnb actuels et testez un seul meublé. Le logiciel peut être gratuit tout en modifiant fortement le versement net de chaque réservation.",
+      "sections": [
+        [
+          "Que permet vraiment l’offre gratuite ?",
+          [
+            "Hospitable a lancé le 30 juin 2026 une formule Essentials sans abonnement de base et sans limite annoncée de logements. Elle rassemble les messages reçus depuis Airbnb, Booking.com et Vrbo, synchronise les calendriers, programme des messages d’arrivée ou de départ et organise les tâches de ménage.",
+            "La formule comprend aussi dix utilisations hebdomadaires partagées entre les suggestions de réponses et l’amélioration de messages par intelligence artificielle. Pour huit appartements et quatre semaines, cela représente quarante utilisations, soit cinq par logement si elles sont réparties également.",
+            "Cette limite permet de tester les réponses concernant le Wi-Fi, les horaires ou les consignes d’arrivée. Elle ne suffit pas à automatiser toutes les conversations d’un parc de plusieurs appartements. Les réponses automatiques avancées, certaines alertes et les intégrations supplémentaires exigent une offre payante."
+          ]
+        ],
+        [
+          "Pourquoi la connexion peut-elle modifier les frais Airbnb ?",
+          [
+            "Airbnb applique deux structures de frais aux séjours. Dans le modèle partagé, la plupart des hôtes paient environ 3 % et le voyageur supporte une autre partie. Dans le modèle à frais uniques, toute la commission est retirée du versement destiné à l’hôte.",
+            "Airbnb indique que les hôtes utilisant un logiciel de gestion immobilière doivent utiliser cette structure à frais uniques. Le taux le plus courant est de 15,5 %, tandis que certains comptes se situent entre 14 et 16 %. Hospitable précise lui-même que la connexion constitue une liaison avec un logiciel de gestion et que les frais de service peuvent changer.",
+            "Le changement n’est pas une commission prélevée par Hospitable et il ne s’agit pas d’une taxe sénégalaise. C’est la structure tarifaire d’Airbnb applicable aux comptes connectés à un logiciel de gestion. Chaque propriétaire doit donc vérifier le pourcentage affiché dans ses propres transactions."
+          ]
+        ],
+        [
+          "Combien cela représente-t-il sur une réservation ?",
+          [
+            "Prenons une réservation simulée de cinq nuits à 60 000 F CFA. Le prix brut atteint 300 000 F CFA. Avec 15,5 % de frais, Airbnb retire 46 500 F CFA et le versement avant les autres charges tombe à 253 500 F CFA.",
+            "Si le compte payait auparavant 3 %, les frais représentaient 9 000 F CFA. La différence simulée atteint alors 37 500 F CFA sur une seule réservation. Pour huit appartements réalisant chacun une réservation identique, la commission totale de 15,5 % atteindrait 372 000 F CFA.",
+            "Cette comparaison ne prouve pas que chaque compte passera de 3 à 15,5 %. Certains logements utilisent déjà la commission unique. Il faut ouvrir une transaction récente dans Airbnb, relever les frais actuels, puis comparer le premier versement après la connexion."
+          ]
+        ],
+        [
+          "Quel est le prix des fonctions supplémentaires ?",
+          [
+            "La tarification dynamique coûte 15 dollars par logement et par mois sur Essentials après trois réservations ou trente jours d’essai. Pour huit logements, cela représente 120 dollars, soit environ 68 220 F CFA au cours vendeur de 568,50 F CFA pour un dollar publié par la BCEAO le 8 septembre 2026.",
+            "Le plan Professional coûte 59 dollars pour deux logements actifs puis 15 dollars par logement supplémentaire. Pour huit logements, le total théorique atteint 149 dollars, soit environ 84 707 F CFA par mois. Le plan Mogul atteindrait 249 dollars, environ 141 557 F CFA, pour huit logements actifs.",
+            "Ces conversions excluent les taxes et les frais bancaires. L’acceptation de chaque carte émise au Sénégal et le paiement direct par Wave ou Orange Money restent non vérifiés. Il ne faut activer une option payante qu’après avoir mesuré son utilité sur un logement pilote."
+          ]
+        ],
+        [
+          "Ce que l’IA peut préparer, et ce qui reste humain",
+          [
+            "L’intelligence artificielle peut préparer un brouillon à partir du nom du voyageur, de ses dates, du nombre de personnes, de l’historique de la conversation, des équipements et des consignes ajoutées au logement. Elle peut aussi adapter la langue détectée, notamment le français lorsque le multilingue est correctement configuré.",
+            "Le gestionnaire doit garder la main sur les pannes d’eau ou d’électricité, les remboursements, les annulations, les plaintes, les cautions, les arrivées imprévues et les incidents de sécurité. Une réponse automatique peut créer une promesse commerciale ou aggraver un conflit si elle s’appuie sur une information ancienne.",
+            "La méthode prudente consiste à commencer par les simples suggestions. Chaque brouillon est relu et corrigé avant l’envoi. L’automatisation complète ne devrait intervenir qu’après plusieurs semaines de messages contrôlés."
+          ]
+        ],
+        [
+          "Quelles données ne faut-il pas transmettre ?",
+          [
+            "Hospitable traite nécessairement des noms, coordonnées, dates de séjour, messages et informations de réservation. Il ne faut pas ajouter à sa base documentaire des copies de passeport, des informations bancaires, des diagnostics médicaux, des codes permanents de porte ou un document contenant les accès de tous les appartements.",
+            "Les coordonnées personnelles des employés de ménage et les conversations privées sans rapport avec le séjour doivent également rester à l’écart. Les données financières et de réservation peuvent être exportées en CSV, mais la disponibilité exacte de tous les exports dans la formule Essentials reste non vérifiée."
+          ]
+        ],
+        [
+          "Comment tester sans mettre tous les logements en risque ?",
+          [
+            "Choisissez un seul appartement. Sauvegardez son calendrier et ses informations, relevez la commission Airbnb actuelle puis configurez seulement les réponses enregistrées, les messages d’arrivée et les tâches de ménage.",
+            "Après la première réservation, comparez le montant brut, la commission, le versement net et le temps réellement gagné. Si le coût supplémentaire dépasse le bénéfice opérationnel, conservez une méthode plus simple : calendrier partagé, tableau de suivi et réponses rapides dans WhatsApp Business.",
+            "Le verdict de Xamxam est simple : Hospitable Essentials peut réduire les oublis et centraliser gratuitement plusieurs meublés, mais aucun compte Airbnb ne devrait être connecté avant le calcul des frais. Un logiciel à 0 F CFA peut modifier le revenu net de chaque nuit vendue."
+          ]
+        ]
+      ],
+      "sources": [
+        [
+          "Hospitable — contenu officiel du plan Essentials",
+          "https://help.hospitable.com/en/articles/14124143-essentials-plan-overview"
+        ],
+        [
+          "Hospitable — grille tarifaire et options",
+          "https://help.hospitable.com/en/articles/4596748-hospitable-pricing-subscription-costs"
+        ],
+        [
+          "Hospitable — fonctionnement d’Inbox AI",
+          "https://hospitable.com/features/inboxai"
+        ],
+        [
+          "Airbnb — structures et taux des frais de service",
+          "https://www.airbnb.com/help/article/1857"
+        ],
+        [
+          "Hospitable — export des données",
+          "https://help.hospitable.com/en/articles/5625450-getting-started-with-exports"
+        ],
+        [
+          "BCEAO — cours des devises du 8 septembre 2026",
+          "https://www.bceao.int/fr/cours/cours-des-devises-contre-Franc-CFA-appliquer-aux-transferts"
+        ]
+      ],
+      "updatedDate": "2026-09-08",
+      "image": "/images/editorial/hospitable-meubles-frais-airbnb-senegal-2026.webp",
+      "imageAlt": "Huit appartements reliés à un gestionnaire central tandis qu’une réservation est séparée entre le versement de l’hôte et une commission.",
+      "socialImage": "/images/editorial/hospitable-meubles-frais-airbnb-senegal-2026.webp"
+    },
     "reimaginehome-decorateurs-architectes-interieur-senegal": {
       "professions": ["decorateurs-architectes-interieur"],
       "topics": ["décoration intérieure", "visualisation", "aménagement", "confidentialité"],
