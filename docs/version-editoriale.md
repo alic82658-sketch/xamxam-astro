@@ -13,6 +13,9 @@ Le site public reprend le projet Xamxam Sites, version 13, commit source
 - Images WebP : `public/images/editorial/`.
 - Identité visuelle robotique Xamxam : `src/data/visual-identity.json` et
   `docs/direction-visuelle-xamxam.md`.
+- Pour un article centré sur une marque ou un outil, le logo authentique validé
+  doit être prévu dans le concept, intégré sans déformation et contrôlé sur
+  l’image d’article, l’aperçu social et la page publique.
 - Anciens articles : `src/content/articles/` ; leur état de brouillon est conservé.
 - Fiches de l’écosystème : `src/content/acteurs/`, avec leurs adresses existantes.
 

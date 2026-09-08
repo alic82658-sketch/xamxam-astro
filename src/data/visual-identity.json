@@ -25,10 +25,22 @@
     "verre technique légèrement translucide"
   ],
   "composition": {
-    "article": "horizontal 16:9, sujet central lisible, espace négatif généreux, sans texte",
+    "article": "horizontal 16:9, sujet central lisible, espace négatif généreux, sans texte hors logo authentique utile à l’identification du sujet",
     "social": "vertical ou carré, même sujet, accroche de 4 à 9 mots, logo Xamxam discret",
     "lighting": "lumière de studio nette, contours visibles, ombres douces, jamais sous-exposé",
     "density": "un sujet principal et deux éléments secondaires au maximum"
+  },
+  "brandLogos": {
+    "rule": "Lorsqu’un article porte principalement sur une marque ou un outil identifiable, intégrer son logo officiel authentique dès la conception et contrôler sa présence dans l’affichage final.",
+    "source": "Utiliser uniquement un fichier officiel ou fourni et validé par la rédaction.",
+    "fidelity": "Conserver exactement formes, couleurs, proportions, lettres et espacements ; ne jamais régénérer ou déformer le logo.",
+    "placement": "Rester lisible en recadrage mobile, intégré sobrement dans la scène ou sur un cartouche, sans remplacer l’information éditoriale.",
+    "finalChecks": [
+      "image d’article",
+      "aperçu social Open Graph",
+      "page publique sur mobile et ordinateur"
+    ],
+    "fallback": "Sans fichier authentique vérifiable, ne pas intégrer de logo et signaler cette absence dans la fiche de production."
   },
   "topicModules": {
     "security": "module robotique de protection, verrou mécanique, bouclier ou circuit isolé",
@@ -49,5 +61,5 @@
     "science-fiction spectaculaire sans lien avec l’usage expliqué",
     "plusieurs styles graphiques concurrents dans la même image"
   ],
-  "masterPrompt": "Créer une image éditoriale Xamxam.ai montrant [SUJET] sous la forme d’un objet-machine non humanoïde, précis et modulaire. Construire discrètement un X avec deux articulations ou lignes techniques autour d’un noyau de savoir cobalt lumineux. Utiliser graphite mat, métal brossé sombre, céramique cobalt et un seul témoin doré. Lumière de studio claire, contours très lisibles, ombres douces, fond épuré bleu très pâle ou papier chaud, composition horizontale 16:9 mobile-safe, un sujet central et deux éléments secondaires au maximum. Style éditorial technologique premium, crédible et propre à Xamxam.ai. Aucun humain, aucun visage, aucun robot humanoïde, aucun cerveau bleu générique, aucun cyberpunk, aucun faux écran, aucun texte, aucun watermark, aucune sous-exposition."
+  "masterPrompt": "Créer une image éditoriale Xamxam.ai montrant [SUJET] sous la forme d’un objet-machine non humanoïde, précis et modulaire. Construire discrètement un X avec deux articulations ou lignes techniques autour d’un noyau de savoir cobalt lumineux. Utiliser graphite mat, métal brossé sombre, céramique cobalt et un seul témoin doré. Lumière de studio claire, contours très lisibles, ombres douces, fond épuré bleu très pâle ou papier chaud, composition horizontale 16:9 mobile-safe, un sujet central et deux éléments secondaires au maximum. Si l’article porte principalement sur une marque ou un outil identifiable et qu’un fichier authentique validé est disponible, intégrer exactement son logo dans la zone mobile-safe et contrôler sa présence dans le rendu final ; sinon ne pas inventer de logo. Style éditorial technologique premium, crédible et propre à Xamxam.ai. Aucun humain, aucun visage, aucun robot humanoïde, aucun cerveau bleu générique, aucun cyberpunk, aucun faux écran, aucun texte hors logo authentique utile, aucun watermark, aucune sous-exposition."
 }

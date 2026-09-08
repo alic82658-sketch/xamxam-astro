@@ -40,6 +40,29 @@ sociale reprend exactement la même scène en carré ou vertical, avec une accro
 de quatre à neuf mots et le logo Xamxam discret. Le titre complet ne doit jamais
 être recopié sur l’image.
 
+## Logos de marques et d’outils
+
+Lorsqu’un article porte principalement sur une marque, un logiciel, une
+plateforme ou un équipement identifiable, son logo officiel doit être pris en
+compte dès le concept visuel puis contrôlé sur le rendu final. Il doit aider le
+lecteur à identifier immédiatement le sujet, rester lisible après recadrage
+mobile et ne jamais être recréé approximativement.
+
+- utiliser uniquement un fichier authentique fourni par la marque ou validé
+  par la rédaction ;
+- conserver strictement les formes, couleurs, proportions, lettres et
+  espacements du logo ;
+- intégrer le logo dans la scène ou sur un cartouche sobre, sans lui faire
+  remplacer l’information racontée par l’image ;
+- vérifier sa présence sur l’image d’article, l’aperçu social et la page
+  publique finale ;
+- ne pas ajouter un logo simplement décoratif ni laisser croire à un
+  partenariat ou à une approbation commerciale.
+
+En l’absence de fichier authentique vérifiable, le visuel reste sans logo et la
+mention « logo non intégré faute de source authentique » est conservée dans la
+fiche de production.
+
 ## À éviter absolument
 
 - robot blanc souriant ou humanoïde de banque d’images ;
