@@ -40,6 +40,14 @@
       "guide": "suivi-appartement-meuble",
       "illustration": "keys"
     },
+    "decorateurs-architectes-interieur": {
+      "label": "Décorateurs et architectes d’intérieur",
+      "seoLabel": "décorateurs et architectes d’intérieur",
+      "shortLabel": "Décoration intérieure",
+      "description": "Comparer des directions visuelles avant les plans, le devis et la commande du mobilier.",
+      "guide": null,
+      "illustration": "decor"
+    },
     "demandeurs-emploi": {
       "label": "Demandeurs d’emploi",
       "seoLabel": "demandeurs d’emploi",
@@ -157,6 +165,135 @@
     }
   },
   "articles": {
+    "reimaginehome-decorateurs-architectes-interieur-senegal": {
+      "professions": ["decorateurs-architectes-interieur"],
+      "topics": ["décoration intérieure", "visualisation", "aménagement", "confidentialité"],
+      "tools": ["REimagineHome"],
+      "editorialScore": {
+        "localUtility": 3,
+        "sources": 2,
+        "novelty": 1,
+        "practicalValue": 2,
+        "shareability": 1
+      },
+      "section": "Décoration intérieure",
+      "date": "7 septembre 2026",
+      "publishedDate": "2026-09-07",
+      "verifiedDate": "7 septembre 2026",
+      "read": "8 min",
+      "title": "Cinq essais gratuits : comment un décorateur d’intérieur peut préparer un projet avec l’IA",
+      "seoTitle": "REimagineHome au Sénégal : guide pour décorateurs d’intérieur",
+      "standfirst": "0 F CFA et aucune carte bancaire pour tester cinq directions visuelles. L’IA aide à présenter une intention au client ; les mesures, les plans et la faisabilité restent au professionnel.",
+      "metaDescription": "REimagineHome offre cinq essais sans carte. Méthode, prix, confidentialité et limites pour les décorateurs et architectes d’intérieur au Sénégal.",
+      "number": "5",
+      "unit": "essais",
+      "numberLabel": "gratuits et sans carte bancaire pour explorer un projet réel",
+      "takeaway": "Utilisez les cinq essais sur une seule pièce et trois directions précises. Présentez chaque résultat comme une intention visuelle, puis reprenez les mesures, les plans et le budget avant toute commande.",
+      "sections": [
+        [
+          "À quoi sert réellement l’outil dans ce métier ?",
+          [
+            "Un décorateur ou un architecte d’intérieur peut partir de la photographie d’une pièce et produire rapidement plusieurs directions : palette de couleurs, mobilier, matières, éclairage ou ambiance générale. REimagineHome permet aussi de retirer des objets, meubler une pièce vide, remplacer un élément et modifier certaines surfaces.",
+            "L’intérêt professionnel apparaît avant la décision finale. Au lieu de demander au client d’imaginer une ambiance à partir d’un nuancier, le professionnel peut lui montrer trois hypothèses et éliminer plus tôt celles qui ne lui conviennent pas.",
+            "Cette image ne devient pas un plan. Elle ne confirme ni les dimensions, ni la circulation, ni les contraintes électriques, ni la disponibilité du mobilier à Dakar. Elle sert à cadrer la discussion avant le travail technique."
+          ]
+        ],
+        [
+          "Comment utiliser les cinq essais gratuits ?",
+          [
+            "REimagineHome annonce cinq créations gratuites pour les nouveaux utilisateurs, avec la même intelligence artificielle que les offres payantes. Aucune carte bancaire n’est demandée pour commencer.",
+            "Pour éviter de gaspiller ces essais, consacrez-les à une seule pièce et à une décision précise. Préparez d’abord une photographie droite et lumineuse, les dimensions principales, les éléments à conserver, le budget du client et les matières réellement adaptées à son usage.",
+            "Demandez ensuite trois directions différentes, puis utilisez les deux derniers essais pour corriger les options les plus solides. Cette méthode donne un petit dossier de présentation cohérent au lieu de cinq images sans rapport entre elles."
+          ]
+        ],
+        [
+          "Une consigne adaptée à un projet à Dakar",
+          [
+            "Exemple : « Réaménage ce salon destiné à une location meublée. Conserve exactement les murs, les fenêtres, le sol et le téléviseur. Propose un canapé bleu foncé résistant, des matières faciles à nettoyer, du bois disponible localement, peu d’objets fragiles et un passage dégagé. N’ajoute aucun meuble sans emplacement réaliste. »",
+            "Le professionnel peut remplacer la location meublée par un bureau, un restaurant ou une résidence familiale. Il doit surtout décrire les contraintes qui font la différence entre une belle image et une proposition adaptée : enfants, fumée, sable, entretien fréquent, humidité, forte chaleur ou usage intensif.",
+            "L’IA prépare la visualisation. Le décorateur ou l’architecte d’intérieur choisit la direction, corrige les incohérences, calcule les quantités et transforme l’intention en projet réalisable."
+          ]
+        ],
+        [
+          "Ce que le professionnel doit reprendre lui-même",
+          [
+            "Une image générée peut agrandir discrètement une pièce, déplacer une ouverture, modifier une hauteur ou représenter un meuble qui ne passerait pas par la porte. Il faut donc comparer chaque résultat à la photographie d’origine et aux mesures prises sur place.",
+            "Les plans, les coupes, les prises électriques, la plomberie, la ventilation, les charges, les matériaux et la sécurité ne doivent pas être déduits d’un simple rendu. Toute modification structurelle ou technique exige le contrôle du professionnel compétent.",
+            "Le devis reste également humain. L’outil peut aider à organiser une liste, mais il ne connaît pas automatiquement le prix du menuisier, du tapissier, du peintre ou des matériaux disponibles au Sénégal."
+          ]
+        ],
+        [
+          "Combien coûte la suite ?",
+          [
+            "La page tarifaire annonce des formules allant de 14 à 99 dollars par mois, avec 30 à 900 crédits selon l’offre. Une génération visuelle utilise normalement un crédit. La recherche de produits suivie de leur visualisation en utilise deux.",
+            "Au cours vendeur de 568,250 F CFA pour un dollar publié par la BCEAO le 7 septembre 2026, 14 dollars correspondent à environ 7 956 F CFA et 99 dollars à environ 56 257 F CFA par mois. Les taxes et frais bancaires éventuels ne sont pas inclus.",
+            "Le paiement passe par Stripe et des cartes bancaires. L’acceptation de chaque carte sénégalaise reste non vérifiée. Aucun règlement direct par Wave ou Orange Money n’est documenté. Avant de payer, vérifiez le montant final et testez si les cinq essais gratuits réduisent réellement les allers-retours avec un client."
+          ]
+        ],
+        [
+          "Les meubles proposés sont-ils disponibles au Sénégal ?",
+          [
+            "L’outil peut associer certains rendus à des produits vendus par Amazon, Shopify ou d’autres commerçants. Cette fonction ne garantit pas une livraison au Sénégal, un prix rendu Dakar ou la disponibilité au moment de la commande.",
+            "Pour un projet local, le résultat peut plutôt servir de référence visuelle à présenter à un menuisier, un tapissier ou un fournisseur. Il faut alors préciser les dimensions, les matériaux, la couleur, la finition et le budget au lieu de demander une copie aveugle de l’image.",
+            "Une pièce trouvée en ligne doit être contrôlée chez le vendeur : prix, dimensions, frais de livraison, douane, retour et délai. Écrivez « non vérifié » dans votre présentation tant que ces points ne sont pas confirmés."
+          ]
+        ],
+        [
+          "Comment présenter le résultat au client ?",
+          [
+            "Indiquez clairement « proposition visuelle » ou « simulation d’aménagement ». Placez si possible la photographie d’origine à côté du rendu et listez les éléments qui devront encore être mesurés ou chiffrés.",
+            "Une simulation ne doit pas être publiée comme une photographie du logement terminé. Dans une annonce immobilière, le visiteur doit comprendre ce qui existe réellement et ce qui relève d’une projection.",
+            "Le professionnel protège ainsi sa crédibilité : l’image sert à obtenir un accord sur la direction, tandis que le plan, l’échantillon, le devis et la validation finale engagent le projet."
+          ]
+        ],
+        [
+          "Quelles images faut-il éviter d’envoyer ?",
+          [
+            "Retirez les personnes, adresses complètes, numéros de chambre, clés, badges, QR codes, documents et informations financières visibles. Un projet sous embargo ou le domicile identifiable d’un client ne doit pas être envoyé sans autorisation.",
+            "La politique de confidentialité indique que les images et l’historique restent conservés pendant la vie du compte ou jusqu’à leur suppression. Après une demande de suppression du compte, ils sont normalement effacés ou anonymisés sous quatorze jours, avec des exceptions légales, comptables et de sécurité.",
+            "Le service fonctionne sur le Web et propose une application Android. La disponibilité de l’application iPhone dans l’App Store sénégalais et une interface entièrement en français restent non vérifiées."
+          ]
+        ],
+        [
+          "Le verdict de Xamxam",
+          [
+            "Les cinq essais gratuits suffisent pour préparer une première conversation visuelle avec un client. Le meilleur usage professionnel consiste à comparer quelques directions tout en verrouillant la structure, le budget et les contraintes de la pièce.",
+            "Ce qui est confirmé : cinq créations gratuites sans carte, un accès Web, une application Android, plusieurs fonctions d’aménagement et des offres payantes fondées sur des crédits.",
+            "Ce qui reste à vérifier au Sénégal : l’acceptation des cartes locales, le français complet, l’application iPhone, la résolution exacte des téléchargements gratuits et la livraison des produits suggérés. Commencez gratuitement et ne payez que si l’outil réduit un travail réel et mesurable."
+          ]
+        ]
+      ],
+      "sources": [
+        [
+          "REimagineHome — cinq créations gratuites et fonctions",
+          "https://www.reimaginehome.ai/"
+        ],
+        [
+          "REimagineHome — formules, crédits et paiement",
+          "https://www.reimaginehome.ai/pricing"
+        ],
+        [
+          "REimagineHome — conditions d’utilisation et limites",
+          "https://www.reimaginehome.ai/terms-of-use"
+        ],
+        [
+          "REimagineHome — conservation et suppression des données",
+          "https://www.reimaginehome.ai/privacy-policy"
+        ],
+        [
+          "Google Play — application Android REimagineHome",
+          "https://play.google.com/store/apps/details?id=ai.reimaginehome.app"
+        ],
+        [
+          "BCEAO — cours des devises du 7 septembre 2026",
+          "https://www.bceao.int/fr/cours/cours-des-devises-contre-Franc-CFA-appliquer-aux-transferts"
+        ]
+      ],
+      "updatedDate": "2026-09-07",
+      "image": "/images/editorial/reimaginehome-decoration-interieur-senegal-2026.webp",
+      "imageAlt": "Un même salon à Dakar apparaît avant et après une proposition d’aménagement, avec un robot de mesure, un mètre et des échantillons de matières.",
+      "socialImage": "/images/editorial/reimaginehome-decoration-interieur-senegal-2026.webp"
+    },
     "gemini-gratuit-etudiants-senegal": {
       "professions": ["professeurs-formateurs", "demandeurs-emploi"],
       "topics": ["études", "formation", "abonnement", "paiement"],
