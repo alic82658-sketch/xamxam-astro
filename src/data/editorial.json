@@ -165,6 +165,138 @@
     }
   },
   "articles": {
+    "ia-ecole-senegal-protection-donnees-eleves": {
+      "professions": [
+        "professeurs-formateurs"
+      ],
+      "topics": [
+        "éducation",
+        "données personnelles",
+        "confidentialité",
+        "contrôle humain"
+      ],
+      "tools": [
+        "Microsoft",
+        "IA scolaire"
+      ],
+      "editorialScore": {
+        "localUtility": 2,
+        "sources": 2,
+        "novelty": 2,
+        "practicalValue": 2,
+        "shareability": 0
+      },
+      "section": "Alerte guide · Enseignement",
+      "date": "10 septembre 2026",
+      "publishedDate": "2026-09-10",
+      "verifiedDate": "10 septembre 2026",
+      "read": "8 min",
+      "title": "Dix clauses à vérifier avant d’utiliser une IA dans une école au Sénégal",
+      "seoTitle": "IA à l’école au Sénégal : dix règles pour protéger les données des élèves",
+      "standfirst": "0 donnée d’élève utilisée pour entraîner un modèle, contrôle humain obligatoire et export gratuit : un nouveau standard américain donne aux écoles sénégalaises une grille concrète, sans s’appliquer automatiquement ici.",
+      "metaDescription": "IA à l’école au Sénégal : dix clauses à vérifier pour protéger les données des élèves, encadrer la notation et conserver un véritable contrôle humain.",
+      "number": "10 000",
+      "unit": "requêtes",
+      "numberLabel": "dans une simulation de 500 élèves utilisant chacun l’outil vingt fois",
+      "takeaway": "Ce standard ne protège pas automatiquement une école sénégalaise. Avant le premier usage, l’établissement doit obtenir par écrit les règles d’entraînement, de conservation, de suppression, de décision humaine et de sortie du contrat.",
+      "sections": [
+        [
+          "Ce qui vient de changer",
+          [
+            "Le 9 septembre 2026, Microsoft, l’American Federation of Teachers et la United Federation of Teachers ont annoncé un standard de sécurité et de confidentialité pour les outils d’intelligence artificielle utilisés à l’école. Le document signé compte 31 pages et organise ses garanties autour de dix principes.",
+            "Microsoft s’engage à rendre les protections substantielles du standard accessibles, sur demande et dans un délai de 90 jours, aux établissements scolaires américains qui utilisent ses produits éducatifs d’IA. Elles peuvent être ajoutées à un contrat ou à un avenant et devenir ainsi opposables.",
+            "Ce texte n’est donc ni une loi sénégalaise ni une protection automatiquement attachée à tous les comptes Microsoft. Son intérêt pour le Sénégal est ailleurs : il transforme des promesses souvent vagues en questions contractuelles précises qu’une école peut poser à n’importe quel fournisseur avant de lui transmettre les travaux des élèves."
+          ]
+        ],
+        [
+          "Quelles données faut-il réellement protéger ?",
+          [
+            "Le standard retient une définition large des données scolaires : noms, numéros d’élève, notes, dossiers disciplinaires, consignes envoyées à l’IA, réponses générées pour une personne, habitudes d’utilisation, identifiants d’appareil, localisation, fichiers de mémoire, images, sons, vidéos et métadonnées.",
+            "Une requête apparemment banale peut donc révéler une difficulté d’apprentissage, une situation familiale, une sanction, une information de santé ou la manière dont un élève travaille. Protéger seulement le bulletin ou la pièce d’identité ne suffit pas : la conversation avec l’outil peut elle-même constituer une donnée personnelle."
+          ]
+        ],
+        [
+          "Ce que le standard interdit",
+          [
+            "Les données couvertes ne doivent pas servir à entraîner, affiner ou améliorer un modèle général. L’interdiction concerne aussi les données transformées ou prétendument anonymisées lorsqu’elles proviennent des dossiers scolaires. Une exception étroite existe pour certaines fonctions de sécurité, par exemple la détection de violences, de harcèlement ou d’automutilation, mais elle ne peut pas devenir un prétexte à l’amélioration commerciale générale du modèle.",
+            "Le texte interdit aussi, sauf autorisation écrite justifiée, la géolocalisation précise continue, l’enregistrement des frappes au clavier, le suivi passif de l’attention, le profilage durable et la collecte biométrique. Il exclut les fonctions de compagnon artificiel conçues pour créer un attachement émotionnel ou prolonger l’utilisation au-delà de la tâche d’apprentissage.",
+            "Le fournisseur ne doit ni vendre les données ni les utiliser pour la publicité. L’école doit pouvoir régler la durée de conservation, demander la suppression, connaître la région d’hébergement et récupérer gratuitement les informations exportables dans un format courant."
+          ]
+        ],
+        [
+          "Quelles décisions doivent rester humaines ?",
+          [
+            "Une IA peut préparer un exercice, proposer une grille de correction, résumer un cours ou signaler un passage à relire. Elle ne doit pas décider seule d’une note, d’une sanction disciplinaire, d’un placement par niveau, d’une orientation vers l’éducation spécialisée ou d’une évaluation émotionnelle et psychologique.",
+            "Les fonctions capables d’envoyer un message, de remettre un devoir, de modifier un réglage ou d’agir sur un service extérieur doivent pouvoir être désactivées. Pour les élèves, les actions qui produisent une conséquence extérieure sont désactivées par défaut, sauf décision explicite d’un administrateur, permissions limitées, journalisation et contrôle humain approprié.",
+            "Autrement dit, l’outil peut aider l’enseignant à préparer et à vérifier. L’établissement, le professeur et les responsables légaux conservent la responsabilité de l’évaluation, de l’orientation, de la discipline et de la protection de l’enfant."
+          ]
+        ],
+        [
+          "Les dix questions à poser avant de signer",
+          [
+            "1. Les requêtes, documents et résultats des élèves servent-ils, directement ou indirectement, à entraîner ou améliorer un modèle ?",
+            "2. Quelles données sont strictement nécessaires au service, et lesquelles peut-on désactiver ou ne jamais transmettre ?",
+            "3. Où les données sont-elles hébergées, pendant combien de temps et par quels sous-traitants ?",
+            "4. L’école peut-elle voir, corriger, effacer et exporter gratuitement les données dans un format courant ?",
+            "5. Une personne valide-t-elle toute note, sanction, orientation ou décision importante proposée par l’IA ?",
+            "6. Quelles fonctions peuvent agir à la place de l’élève ou de l’enseignant, et sont-elles désactivées par défaut ?",
+            "7. Quels audits indépendants, tests de sécurité et documents sur les limites du modèle sont disponibles ?",
+            "8. Sous quel délai l’établissement et les familles sont-ils informés d’un incident, et quelles informations reçoivent-ils ?",
+            "9. Le service fonctionne-t-il en français, avec les outils d’accessibilité, et quelles différences de performance sont connues ?",
+            "10. L’école peut-elle refuser une nouvelle fonction, quitter le fournisseur sans surcoût artificiel et récupérer ses fichiers avant leur suppression ?"
+          ]
+        ],
+        [
+          "Que représente le risque à l’échelle d’une école ?",
+          [
+            "Prenons une simulation prudente : un établissement de 500 élèves autorise vingt requêtes par élève pendant une période pédagogique. Le calcul donne 500 × 20 = 10 000 requêtes. Pour une seule classe de trente élèves, le même scénario représente déjà 600 conversations.",
+            "Ce ne sont pas des volumes observés au Sénégal. Ils montrent qu’une politique imprécise peut exposer des milliers de textes, fichiers et réponses liés aux difficultés scolaires ou à la vie privée des enfants.",
+            "Le standard complet est accessible gratuitement en PDF : 0 F CFA, aucun compte ni carte bancaire requis, lecture possible sur ordinateur ou téléphone et téléchargement autorisé. Il compte 31 pages et n’est publié qu’en anglais."
+          ]
+        ],
+        [
+          "Ce texte protège-t-il une école sénégalaise ?",
+          [
+            "Non, pas automatiquement. Le standard définit son client éducatif comme une entité située aux États-Unis. Une école sénégalaise ne peut donc pas affirmer que ces garanties figurent déjà dans son contrat Microsoft, ni dans celui d’un autre fournisseur.",
+            "Au Sénégal, le traitement reste notamment soumis à la loi n° 2008-12 sur la protection des données à caractère personnel et au contrôle de la Commission de protection des données personnelles. La collecte, le consentement, la durée de conservation, la sécurité et le transfert vers des serveurs étrangers doivent être vérifiés selon le cas.",
+            "La bonne méthode consiste à reprendre les dix questions, demander des réponses écrites, faire examiner le contrat et vérifier les formalités nécessaires auprès de la CDP ou d’un juriste compétent."
+          ]
+        ],
+        [
+          "Ce que l’école peut faire dès demain",
+          [
+            "Le directeur peut commencer par l’inventaire des outils déjà utilisés par les enseignants et les élèves. Pour chacun, il relève le type de compte, les données envoyées, la fonction de mémoire, le lieu d’hébergement connu, les sous-traitants, la durée de conservation et le moyen de supprimer ou d’exporter les fichiers.",
+            "Avant un déploiement collectif, l’établissement teste l’outil avec des documents fictifs et anonymisés. Il interdit les copies identifiables, les bulletins, les dossiers disciplinaires, les informations médicales et les mots de passe. Il désigne aussi la personne qui autorise les usages et reçoit les alertes de sécurité.",
+            "L’intelligence artificielle peut préparer un cours ou un exercice. Le professeur vérifie les sources, corrige les erreurs et décide de la note. Le fournisseur doit expliquer ses garanties ; l’école doit fixer ses règles ; les familles doivent recevoir une information compréhensible avant que les données des enfants ne circulent."
+          ]
+        ],
+        [
+          "Confirmé, incertain et à surveiller",
+          [
+            "Confirmé : Microsoft a signé le standard avec l’AFT et son organisation new-yorkaise ; le texte comporte dix principes ; il prévoit notamment l’exclusion des données scolaires de l’entraînement général, le contrôle humain des décisions, l’export sans frais et une notification sous 72 heures après la découverte d’une atteinte confirmée ou raisonnablement suspectée.",
+            "Incertain : la possibilité pour une école sénégalaise d’obtenir les mêmes clauses, la conformité des outils déjà utilisés localement, la localisation réelle de leurs données et leurs performances en français ou dans les langues nationales.",
+            "À surveiller : un cadre scolaire publié par le ministère de l’Éducation ou la CDP, l’adoption locale de clauses comparables et les engagements contractuels d’autres fournisseurs. Le standard américain constitue une grille de contrôle ; sa valeur au Sénégal dépendra des contrats réellement signés et du droit applicable."
+          ]
+        ]
+      ],
+      "sources": [
+        [
+          "Microsoft — annonce du standard du 9 septembre 2026",
+          "https://news.microsoft.com/source/2026/09/09/aft-uft-and-microsoft-announce-national-ai-safety-privacy-standard-for-schools-to-protect-students-families-and-educators/"
+        ],
+        [
+          "AFT — accord intégral de 31 pages",
+          "https://www.aft.org/sites/default/files/media/documents/2026/NAfAI-School_AI_Privacy_Standards.pdf"
+        ],
+        [
+          "Commission de protection des données personnelles du Sénégal",
+          "https://www.cdp.sn/"
+        ]
+      ],
+      "updatedDate": "2026-09-10",
+      "image": "/images/editorial/ia-ecole-senegal-protection-donnees-eleves-2026.webp",
+      "imageAlt": "Un dossier scolaire générique traverse une machine de contrôle entourée de verrous protégeant les données des élèves."
+    },
     "hospitable-senegal-meubles-frais-airbnb": {
       "professions": ["immobilier-meubles", "dirigeants-pme"],
       "topics": ["location meublée", "Airbnb", "commission", "automatisation"],
