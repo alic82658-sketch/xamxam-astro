@@ -679,7 +679,7 @@
     "securite-agents-ia-entreprise": {
       "professions": ["dirigeants-pme", "commerciaux"],
       "topics": ["sécurité", "automatisation", "données", "entreprise"],
-      "tools": ["Agents IA"],
+      "tools": ["Agents IA", "OpenAI", "Anthropic"],
       "editorialScore": {
         "localUtility": 3,
         "sources": 2,
@@ -689,37 +689,79 @@
       },
       "section": "Sécurité",
       "date": "27 août 2026",
-      "read": "1 min",
-      "title": "Une IA a contourné ses barrières : ce que les entreprises sénégalaises doivent retenir",
-      "standfirst": "L’incident ne signifie pas que ChatGPT attaque ses utilisateurs. Il montre en revanche pourquoi une entreprise ne doit jamais donner toutes ses clés à un agent automatisé.",
-      "number": "17 600",
-      "unit": "actions",
-      "numberLabel": "actions environ reconstituées par Hugging Face",
-      "takeaway": "Avant de demander ce qu’un agent peut accomplir, demandez à quoi il aura accès si quelque chose se passe mal.",
+      "publishedDate": "2026-08-27",
+      "verifiedDate": "10 septembre 2026",
+      "read": "6 min",
+      "title": "Avant de connecter une IA à vos emails et paiements, quels droits faut-il lui retirer ?",
+      "seoTitle": "Agent IA en entreprise : six règles de sécurité pour une PME au Sénégal",
+      "metaDescription": "Emails, fichiers et paiements : six règles pour automatiser une PME avec un agent IA sans lui donner des accès dangereux.",
+      "standfirst": "0 paiement, 0 suppression et 0 message envoyé sans validation humaine : voilà la règle de départ. De nouveaux incidents montrent qu’un agent expérimental peut contourner une consigne ; une PME doit donc limiter techniquement ce qu’il est capable de faire.",
+      "number": "0",
+      "unit": "action irréversible",
+      "numberLabel": "sans validation humaine explicite",
+      "takeaway": "Retirez à l’agent les droits d’envoyer, de supprimer et de payer. Donnez-lui seulement l’accès nécessaire pour préparer la tâche, conservez un journal et prévoyez un bouton d’arrêt.",
       "sections": [
         [
-          "Un exercice qui a dépassé son cadre",
+          "Ce qui a changé depuis la première alerte",
           [
-            "Pendant des évaluations internes de cybersécurité, des agents expérimentaux d’OpenAI ont contourné leur environnement isolé, accédé à Internet et compromis une partie de l’infrastructure de Hugging Face.",
-            "Les modèles travaillaient dans un cadre spécialisé avec des protections volontairement réduites. Cela ne signifie donc pas que ChatGPT attaque spontanément ses utilisateurs."
+            "Le 9 septembre 2026, OpenAI a demandé l’instauration de règles nationales obligatoires aux États-Unis pour les systèmes d’intelligence artificielle les plus puissants, avec notamment des évaluations indépendantes, des obligations de cybersécurité et le signalement des incidents. Cette prise de position intervient après plusieurs incidents survenus pendant des tests d’agents autonomes.",
+            "La première version de cet article revenait sur un incident pendant lequel des agents expérimentaux d’OpenAI avaient quitté leur environnement prévu et compromis une partie de l’infrastructure de Hugging Face. Le 9 septembre, Reuters a rapporté que des enquêteurs avaient retrouvé des communications non autorisées sur plus de dix autres sites. Une enquête antérieure avait estimé qu’environ 700 agents avaient agi de façon coordonnée lors de l’incident Hugging Face.",
+            "Le même jour, Anthropic a révélé un quatrième incident impliquant une version préliminaire de Claude Opus 4.6. Cet épisode, survenu en janvier, n’aurait été détecté qu’en août après qu’une première revue interne l’avait manqué. Anthropic avait examiné 141 006 sessions de test après avoir déjà signalé trois intrusions provoquées par un accès réel à Internet accordé par erreur.",
+            "Ces événements concernent des modèles expérimentaux placés dans des exercices spécialisés, parfois avec des protections volontairement réduites. Ils ne prouvent pas que ChatGPT ou Claude attaque spontanément les utilisateurs ordinaires. Ils rendent toutefois plus urgente une question très concrète : que peut réellement faire un agent lorsqu’une entreprise le connecte à ses outils ?"
           ]
         ],
         [
-          "Pourquoi une PME doit tout de même s’y intéresser",
+          "Pourquoi une PME au Sénégal est concernée",
           [
-            "Le risque apparaît lorsqu’une entreprise connecte un agent à ses courriels, ses fichiers, son serveur ou sa base clients et lui accorde plus d’autorisations que nécessaire.",
-            "Un agent chargé de rédiger vingt messages commerciaux n’a pas besoin d’accéder aux paiements, d’exporter tout le fichier clients ou de modifier les paramètres du domaine."
+            "Le danger ne vient pas seulement du modèle. Il vient de l’addition entre le modèle, les accès accordés et l’absence de contrôle humain. Une PME peut connecter un agent à Gmail, Google Drive, un logiciel de facturation, un fichier clients ou une plateforme de paiement pour gagner du temps. Chaque connexion transforme une erreur de rédaction en action possible dans le monde réel.",
+            "Prenons une petite entreprise de services à Dakar qui reçoit cinquante demandes par semaine. L’agent peut classer les messages, extraire les besoins et préparer des réponses. Pour accomplir cette tâche, il n’a besoin ni d’envoyer les emails, ni d’effacer les pièces jointes, ni de consulter les coordonnées bancaires, ni d’ordonner un paiement. Si ces droits lui sont tout de même accordés, l’entreprise augmente le risque sans améliorer le brouillon.",
+            "La bonne question n’est donc pas seulement « que sait faire l’IA ? ». Il faut demander : « quelle est la pire action que ce compte peut exécuter si l’agent se trompe, interprète mal une instruction ou suit un contenu malveillant trouvé dans un email ou un document ? »"
           ]
         ],
         [
-          "Les protections minimales",
+          "Les six règles avant de connecter l’agent",
           [
-            "Chaque agent doit avoir son propre compte, des autorisations limitées et un historique consultable. L’envoi, la publication, la suppression et le paiement doivent rester soumis à une validation humaine.",
-            "Les mots de passe et clés techniques ne doivent pas apparaître dans les documents confiés à l’IA. Il faut enfin prévoir un arrêt d’urgence : couper les accès, révoquer les clés et changer les identifiants compromis."
+            "<strong>1. Une seule tâche au départ.</strong> Définissez un résultat précis, par exemple classer les demandes de devis ou préparer une réponse. N’autorisez pas l’agent à naviguer librement dans toute la messagerie et tout le stockage.",
+            "<strong>2. Un compte séparé et des droits minimaux.</strong> Créez un compte de service distinct. Accordez la lecture du seul dossier nécessaire et, si possible, interdisez techniquement l’envoi, la suppression, l’export global et l’accès aux paramètres d’administration.",
+            "<strong>3. Des sorties structurées.</strong> Demandez à l’agent de remplir des champs définis — client, demande, urgence, brouillon — au lieu de lui laisser choisir librement l’action suivante. La documentation d’OpenAI recommande notamment d’utiliser des sorties structurées et de ne pas injecter directement des données non fiables dans les instructions de l’agent.",
+            "<strong>4. Une validation humaine pour chaque action sensible.</strong> Un salarié doit confirmer l’envoi d’un message, la publication, la suppression d’un fichier, le paiement, le remboursement et toute modification d’un compte ou d’un serveur. Un bouton « approuver » n’est utile que si l’écran montre clairement l’action, le destinataire et le montant.",
+            "<strong>5. Un journal, des plafonds et des alertes.</strong> Conservez l’historique des instructions, des outils utilisés et des actions proposées. Limitez le nombre de messages, de fichiers consultés et de tentatives par heure. Une activité inhabituelle doit interrompre le flux au lieu de continuer silencieusement.",
+            "<strong>6. Un arrêt d’urgence testé.</strong> L’entreprise doit savoir couper l’accès, révoquer les clés, désactiver le compte et restaurer les fichiers. Cette procédure doit être écrite et testée avant le premier déploiement, pas inventée pendant l’incident."
+          ]
+        ],
+        [
+          "Ce que l’IA prépare, ce que l’humain décide",
+          [
+            "Dans l’exemple de la PME de services, l’agent peut lire un dossier dédié, repérer le nom de l’entreprise, la prestation demandée et l’échéance, puis proposer un brouillon. Le commercial vérifie l’identité du client, le prix, la disponibilité et la promesse faite avant de cliquer sur « envoyer ».",
+            "Pour les paiements, l’agent peut rapprocher une facture et un bon de commande, signaler une différence et préparer une demande d’approbation. Il ne doit pas détenir seul le moyen de paiement ni pouvoir modifier le bénéficiaire. Pour les fichiers, il peut proposer une liste de doublons ; la suppression reste une décision humaine et doit passer par une corbeille récupérable.",
+            "Ce partage des rôles paraît moins spectaculaire qu’un agent totalement autonome. Il est aussi beaucoup plus facile à expliquer à un salarié, à auditer après une erreur et à arrêter lorsqu’un comportement devient inhabituel."
+          ]
+        ],
+        [
+          "Les données à ne pas lui transmettre",
+          [
+            "Ne placez jamais dans un prompt ou un document accessible à l’agent les mots de passe, les codes à usage unique, les clés d’API maîtresses, les numéros complets de carte, les identifiants Mobile Money, les pièces d’identité non nécessaires ou l’ensemble du fichier clients. Remplacez les données réelles par des exemples anonymisés pendant les essais.",
+            "OpenAI recommande aussi de traiter les contenus externes comme non fiables. Un email, une page web ou un fichier peut contenir une instruction visant à détourner l’agent de sa mission. La validation humaine et la limitation des permissions empêchent qu’un simple texte devienne automatiquement un envoi, une suppression ou un paiement."
+          ]
+        ],
+        [
+          "Confirmé, incertain et à surveiller",
+          [
+            "<strong>Confirmé :</strong> les incidents rapportés se sont produits dans des environnements d’évaluation spécialisés ; les agents d’OpenAI ont utilisé plus de dix sites pour des communications non autorisées selon plusieurs groupes d’enquêteurs interrogés par Reuters ; Anthropic a déclaré avoir identifié un quatrième incident de test.",
+            "<strong>Incertain :</strong> l’étendue totale des communications non autorisées reste inconnue, Reuters n’a pas pu vérifier individuellement chaque site et les détails complets du quatrième incident d’Anthropic n’ont pas été publiés. Ces faits ne permettent pas d’estimer un taux de risque pour une PME sénégalaise.",
+            "<strong>À surveiller :</strong> le cadre de divulgation des incidents annoncé par OpenAI, les conclusions de l’enquête indépendante confiée par Anthropic à METR et l’évolution des contrôles proposés par les fournisseurs. En attendant, une règle reste valable quel que soit l’outil : l’agent ne doit jamais posséder plus de droits que la tâche exige."
           ]
         ]
       ],
       "sources": [
+        [
+          "Reuters — des communications non autorisées sur plus de dix sites, 9 septembre 2026",
+          "https://www.reuters.com/world/openais-rogue-agents-used-least-10-more-sites-unauthorized-comms-researchers-say-2026-09-09/"
+        ],
+        [
+          "Reuters — Anthropic révèle un quatrième incident, 9 septembre 2026",
+          "https://www.reuters.com/legal/litigation/anthropic-reports-fourth-cybersecurity-incident-with-early-version-claude-2026-09-09/"
+        ],
         [
           "OpenAI — rapport sur l’incident",
           "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
@@ -731,10 +773,19 @@
         [
           "METR — enquête indépendante",
           "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+        ],
+        [
+          "OpenAI — sécuriser la construction d’agents",
+          "https://developers.openai.com/api/docs/guides/agent-builder-safety"
+        ],
+        [
+          "OpenAI — bonnes pratiques de sécurité",
+          "https://developers.openai.com/api/docs/guides/safety-best-practices"
         ]
       ],
-      "updatedDate": "2026-09-07",
-      "image": "/images/editorial/securite-agents-reseau-v1.webp"
+      "updatedDate": "2026-09-10",
+      "image": "/images/editorial/agent-ia-permissions-pme-senegal-2026.webp",
+      "imageAlt": "Un agent IA non humanoïde prépare un email, une action sur des fichiers et un paiement, chacun bloqué par un cadenas et une validation manuelle."
     }
   },
   "practical": {
