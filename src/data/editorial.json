@@ -48,6 +48,14 @@
       "guide": null,
       "illustration": "decor"
     },
+    "etudiants": {
+      "label": "Étudiants",
+      "seoLabel": "étudiants",
+      "shortLabel": "Étudiants",
+      "description": "Réviser à partir de ses cours, vérifier les citations et protéger ses documents.",
+      "guide": null,
+      "illustration": "teacher"
+    },
     "demandeurs-emploi": {
       "label": "Demandeurs d’emploi",
       "seoLabel": "demandeurs d’emploi",
@@ -538,8 +546,138 @@
       "imageAlt": "Un même salon à Dakar apparaît avant et après une proposition d’aménagement, avec un robot de mesure, un mètre et des échantillons de matières.",
       "socialImage": "/images/editorial/reimaginehome-decoration-interieur-senegal-2026.webp"
     },
+    "notebooklm-senegal-reviser-cours-gratuitement": {
+      "professions": ["etudiants", "professeurs-formateurs"],
+      "topics": ["études", "révision", "PDF", "citations", "confidentialité"],
+      "tools": ["Gemini Notebook", "Google Drive"],
+      "editorialScore": {
+        "localUtility": 3,
+        "sources": 2,
+        "novelty": 1,
+        "practicalValue": 2,
+        "shareability": 1
+      },
+      "section": "Guide outil · Enseignement",
+      "date": "11 septembre 2026",
+      "publishedDate": "2026-09-11",
+      "verifiedDate": "11 septembre 2026",
+      "read": "9 min",
+      "title": "Gemini Notebook au Sénégal : comment transformer gratuitement un cours en fiche de révision ?",
+      "seoTitle": "NotebookLM au Sénégal : guide gratuit pour réviser ses cours avec l’IA",
+      "standfirst": "0 FCFA et jusqu’à 50 questions par jour dans la formule standard : Gemini Notebook transforme des PDF de cours en fiches, quiz et résumés audio. Mais chaque citation importante doit encore être relue dans le document d’origine.",
+      "metaDescription": "Importer ses cours, créer des fiches et vérifier les citations : méthode, limites gratuites, accès au Sénégal et confidentialité de NotebookLM.",
+      "number": "0",
+      "unit": "FCFA",
+      "numberLabel": "pour utiliser la formule standard avec un compte Google",
+      "takeaway": "Créez un notebook par matière, importez uniquement les documents autorisés, puis ouvrez chaque citation importante avant de mémoriser la réponse. L’outil organise ; l’étudiant comprend et corrige.",
+      "sections": [
+        [
+          "Oui, l’outil est accessible gratuitement au Sénégal",
+          [
+            "Gemini Notebook, anciennement NotebookLM, fonctionne dans le navigateur avec un compte Google. Ses applications Android et iPhone sont également proposées au Sénégal selon la liste officielle publiée par Google. Sur Android, il faut au minimum Android 10.",
+            "La formule standard ne demande ni abonnement ni carte bancaire. Elle permet de travailler à partir de ses propres sources plutôt que de poser une question générale à un chatbot. Le Sénégal figure dans la liste des pays mobiles pris en charge ; il s’agit donc d’un accès confirmé, pas d’une disponibilité simplement annoncée ailleurs.",
+            "L’application et les contenus générés existent en français. Google avertit toutefois que le déploiement mobile reste progressif : un appareil ou un compte peut recevoir certaines fonctions plus tard qu’un autre."
+          ]
+        ],
+        [
+          "Préparez trois sources avant de commencer",
+          [
+            "Pour une matière, réunissez d’abord le support PDF de l’enseignant, le plan officiel du cours et vos propres notes relues. N’ajoutez pas dix documents trouvés au hasard sur Internet : si une source est fausse, ancienne ou hors programme, l’outil peut reprendre son erreur avec beaucoup d’assurance.",
+            "Sur ordinateur, Gemini Notebook accepte notamment les PDF, Word, PowerPoint, Google Docs, Slides et Sheets, les pages Web, les vidéos YouTube publiques disposant de sous-titres, les fichiers audio, les images, le texte copié et les fichiers CSV. Une source téléversée peut atteindre 200 Mo ou 500 000 mots.",
+            "Un fichier importé depuis Google Drive peut se synchroniser lorsque l’original change. En revanche, Gemini Notebook ne modifie ni ne supprime le document d’origine. Les commentaires et notes de bas de page de certains fichiers Google ne sont pas importés : il faut donc les contrôler séparément s’ils contiennent une consigne importante."
+          ]
+        ],
+        [
+          "La méthode en six étapes",
+          [
+            "<strong>1. Créez un notebook par matière.</strong> Ouvrez notebook.google.com et donnez-lui un nom simple, par exemple « Droit constitutionnel — semestre 1 ».",
+            "<strong>2. Ajoutez seulement les documents autorisés.</strong> Importez le support du professeur, le plan du cours et vos notes déjà relues.",
+            "<strong>3. Sélectionnez les sources du chapitre.</strong> Décochez les documents inutiles pour empêcher qu’une autre partie du cours brouille la réponse.",
+            "<strong>4. Demandez une fiche structurée.</strong> Imposez le plan du cours, les notions attendues et une citation pour chaque définition.",
+            "<strong>5. Ouvrez chaque citation importante.</strong> Comparez la réponse au passage d’origine, notamment pour les dates, formules et exceptions.",
+            "<strong>6. Corrigez avant d’exporter.</strong> La fiche finale doit être votre version relue, pas la première production automatique.",
+            "Commencez par cette consigne : <strong>« Utilise uniquement les documents sélectionnés. Classe les notions selon le plan du cours. Pour chaque définition, indique la source correspondante. Si les documents ne permettent pas de répondre, écris clairement “information absente des sources”. »</strong>",
+            "Travaillez ensuite chapitre par chapitre. Une demande ciblée — par exemple cinq définitions du chapitre 3 avec leurs citations — produit un résultat plus facile à contrôler qu’un vague « résume tout le cours »."
+          ]
+        ],
+        [
+          "Transformez la fiche en véritable séance de révision",
+          [
+            "Une fois la synthèse corrigée, demandez dix questions de compréhension classées du plus simple au plus difficile. Répondez sans regarder la fiche, puis demandez à l’outil d’indiquer pour chaque correction le passage exact qui justifie la réponse.",
+            "Dans le panneau Studio, Gemini Notebook peut aussi préparer des flashcards, un quiz, un rapport, une carte mentale ou un résumé audio. Le résumé audio peut être écouté pendant un trajet et téléchargé dans l’application pour un accès hors connexion.",
+            "L’IA prépare le matériel de révision ; elle ne mesure pas parfaitement ce que vous avez compris. Notez vous-même les questions ratées, revenez au cours et reformulez la notion avec vos propres mots."
+          ]
+        ],
+        [
+          "Pourquoi les citations ne suffisent pas",
+          [
+            "Gemini Notebook construit ses réponses à partir des sources sélectionnées et permet normalement de revenir au passage utilisé. C’est son principal avantage pour étudier : une affirmation peut être comparée au document d’origine.",
+            "Mais une citation authentique ne garantit pas une interprétation juste. Elle peut être sortie de son contexte, associée à une conclusion trop large ou tirée d’une note déjà erronée. Les tableaux, schémas, formules et documents mal numérisés demandent une vigilance supplémentaire.",
+            "Avant de mémoriser une définition, cliquez donc sur sa citation et relisez les phrases qui précèdent et qui suivent. Si le sens change, corrigez la fiche. Si aucune citation ne répond directement, classez le point parmi les questions à poser à l’enseignant."
+          ]
+        ],
+        [
+          "Ce que permet réellement la version gratuite",
+          [
+            "Depuis le changement de limites annoncé pour le 2 septembre 2026, la formule standard comprend 100 notebooks par utilisateur, 50 sources par notebook et 50 échanges de chat par jour. Google annonce aussi, sous réserve d’évolution, trois résumés audio et trois résumés vidéo quotidiens.",
+            "La même grille prévoit dix rapports, dix jeux de flashcards, dix quiz et dix cartes mentales par jour, ainsi que dix recherches approfondies par mois. Pour quelques matières, cela peut suffire sans passer à une offre payante.",
+            "Ces plafonds ne sont pas une promesse permanente et se réinitialisent sur des périodes précisées par Google. Une génération automatique créée lors de l’ajout des premières sources peut ne pas être décomptée. Vérifiez la grille officielle si un devoir dépend d’un volume important."
+          ]
+        ],
+        [
+          "Le téléphone suffit-il ?",
+          [
+            "Oui pour ajouter un PDF, une page Web, une vidéo YouTube, un fichier audio ou du texte copié, poser des questions, utiliser les quiz et écouter un résumé audio. Le français fait partie des langues proposées sur mobile.",
+            "Non pour tout faire confortablement. Google recommande l’ordinateur pour l’expérience complète. Sur mobile, les notes, cartes mentales, rapports, tableaux de données et certains réglages peuvent manquer. La synchronisation peut aussi prendre du retard.",
+            "Un résumé audio téléchargé dans l’application reste disponible hors connexion, mais il n’est pas forcément enregistré comme fichier audio indépendant sur le téléphone. Sur le Web, les notes peuvent être envoyées vers Google Docs et les tableaux vers Google Sheets."
+          ]
+        ],
+        [
+          "Quels documents ne faut-il pas importer ?",
+          [
+            "Évitez les relevés de notes nominatifs, listes d’étudiants avec coordonnées, pièces d’identité, dossiers médicaux ou sociaux, examens obtenus sans autorisation et mémoires confidentiels non encore soutenus. N’importez pas non plus une œuvre ou un document que vous n’avez pas le droit de partager.",
+            "Google indique que les fichiers, productions et historiques des notebooks personnels ne servent pas directement à entraîner ses modèles fondamentaux, sauf si l’utilisateur envoie volontairement un avis. Dans ce cas, le contexte associé — questions, sources et réponses — peut être examiné par des équipes humaines et conservé jusqu’à trois ans après dissociation du compte.",
+            "La précaution la plus simple est donc de ne jamais envoyer un pouce positif ou négatif sur une réponse contenant des informations sensibles. Les comptes Workspace et Workspace for Education bénéficient de conditions différentes : Google affirme que leurs contenus ne sont pas examinés par des humains même lorsqu’un avis est envoyé."
+          ]
+        ],
+        [
+          "Le verdict de Xamxam",
+          [
+            "Gemini Notebook est un bon outil gratuit pour retrouver une notion dans plusieurs supports, préparer des questions et organiser une séance de révision. Sa valeur ne vient pas d’un résumé automatique prétendument parfait, mais du lien conservé avec les sources.",
+            "Ce qui est confirmé : accès au Sénégal sur le Web, Android et iPhone, français, formule standard gratuite, 50 sources par notebook, 50 échanges quotidiens et outils de révision. Ce qui reste à surveiller : le déploiement progressif de certaines fonctions mobiles et l’évolution des limites.",
+            "La bonne règle tient en quatre verbes : importer, questionner, vérifier, corriger. L’IA prépare la fiche ; l’étudiant garde le cours original, relit les citations et décide ce qu’il doit réellement apprendre."
+          ]
+        ]
+      ],
+      "sources": [
+        [
+          "Google — pays, langues et fonctions de l’application mobile",
+          "https://support.google.com/gemininotebook/answer/16296687?co=GENIE.Platform%3DAndroid&hl=fr"
+        ],
+        [
+          "Google — formats et limites des sources",
+          "https://support.google.com/gemininotebook/answer/16215270?co=GENIE.Platform%3DDesktop&hl=en"
+        ],
+        [
+          "Google — limites de la formule standard",
+          "https://support.google.com/gemininotebook/answer/16213268?hl=en"
+        ],
+        [
+          "Google — confidentialité et avis transmis",
+          "https://support.google.com/gemininotebook/answer/17004255?hl=en"
+        ],
+        [
+          "Gemini Notebook — accès officiel",
+          "https://notebook.google.com/"
+        ]
+      ],
+      "updatedDate": "2026-09-11",
+      "image": "/images/editorial/gemini-notebook-revision-senegal-2026.webp",
+      "imageAlt": "Trois supports de cours sont reliés par des repères de citation à une fiche de révision, à côté d’un téléphone diffusant un résumé audio et du logo Gemini Notebook.",
+      "socialImage": "/images/editorial/gemini-notebook-revision-senegal-social-2026.webp"
+    },
     "gemini-gratuit-etudiants-senegal": {
-      "professions": ["professeurs-formateurs", "demandeurs-emploi"],
+      "professions": ["etudiants", "professeurs-formateurs"],
       "topics": ["études", "formation", "abonnement", "paiement"],
       "tools": ["Google Gemini"],
       "editorialScore": {

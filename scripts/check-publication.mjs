@@ -9,7 +9,7 @@ const visualIdentity = JSON.parse(await readFile(visualIdentityPath, 'utf8'));
 assert(visualIdentity.masterPrompt.includes('objet-machine non humanoïde'), 'Prompt visuel Xamxam incomplet');
 assert(visualIdentity.forbidden.includes('image trop sombre ou sujet noyé dans le décor'), 'Règle de lisibilité visuelle absente');
 const professionSlugs = new Set(Object.keys(editorial.professions));
-assert.equal(professionSlugs.size, 7, 'La version éditoriale doit publier sept parcours métiers');
+assert.equal(professionSlugs.size, 8, 'La version éditoriale doit publier huit parcours métiers');
 for (const [slug, profession] of Object.entries(editorial.professions)) {
   if (profession.guide) assert(editorial.guides[profession.guide], `Métier ${slug} sans guide publié`);
   else assert(Object.values(editorial.articles).some(article => article.professions?.includes(slug)), `Métier ${slug} sans contenu publié`);
@@ -64,7 +64,7 @@ for (const [from,to] of redirects) {
   assert(!redirectMap.has(to), `Chaîne de redirections depuis ${from}`);
 }
 const home=await readFile(join(root,'index.html'),'utf8');
-for (const label of ['Commerçants','Commerciaux','Professeurs','Dirigeants de PME','Immobilier','Décoration intérieure','Emploi']) assert(home.includes(label),`Parcours absent de l’accueil : ${label}`);
+for (const label of ['Commerçants','Commerciaux','Professeurs','Dirigeants de PME','Immobilier','Décoration intérieure','Étudiants','Emploi']) assert(home.includes(label),`Parcours absent de l’accueil : ${label}`);
 for (const [slug, article] of Object.entries(editorial.articles)) {
   if (!article.image) continue;
   assert((await stat(join(root, article.image.replace(/^\//, '')))).size > 1000, `Visuel éditorial manquant ou vide : ${slug}`);
@@ -73,4 +73,4 @@ const sitemap=await readFile(join(root,'sitemap-0.xml'),'utf8');
 assert(sitemap.includes('https://xamxam.ai/guides/cv-adapte-offre/'));
 assert(sitemap.includes('https://xamxam.ai/metiers/dirigeants-pme/'));
 assert(!sitemap.includes('ia-au-senegal-outils-formations-opportunites'));
-console.log(`${htmlFiles.length} pages contrôlées ; ${links} liens et visuels internes valides ; sept parcours métiers ; canoniques, données structurées et redirections vérifiés.`);
+console.log(`${htmlFiles.length} pages contrôlées ; ${links} liens et visuels internes valides ; huit parcours métiers ; canoniques, données structurées et redirections vérifiés.`);
